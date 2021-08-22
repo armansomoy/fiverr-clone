@@ -12,6 +12,9 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- arman CSS -->
+    <link rel="stylesheet" href="css/arman.css">
+
     <title>Sikhbo Ami. CPA Marketing. Fiver </title>
 
     <!-- favicon -->
@@ -42,9 +45,57 @@
                         <li class="nav-item ">
                             <a class="nav-link" href="#">Dashboard </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Messages</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Messages
+                            </a>
+                            <div id="message-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                <ul class="message-header nav nav-tabs" id="myTab" role="tablist">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active nav-tab-notification" id="home-tab" data-toggle="tab"
+                                            href="#home" role="tab" aria-controls="home" aria-selected="true"><i
+                                                class="fas fa-bullhorn"></i>Notification (0)
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+                                            role="tab" aria-controls="profile" aria-selected="false"><i
+                                                class="fas fa-comment"></i> Inbox (0)</a>
+                                    </li>
+
+                                </ul>
+
+                                <div class="tab-content message-body" id="myTabContent">
+
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                        aria-labelledby="home-tab">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <i><i class="far fa-bell"></i></i>
+                                            </div>
+                                            <div class="col-lg-6">
+
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+                                                    praesentium?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="profile" role="tabpanel"
+                                        aria-labelledby="profile-tab"> temporibus a, voluptate et repudiandae in
+                                        illo rerum. Quia accusantium maiores dicta fugiat dol.</div>
+                                </div>
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link disabled" href="#">Orders</a>
                         </li>
@@ -57,22 +108,61 @@
                         <li class="nav-item">
                             <a class="nav-link disabled" href="#">Earnings</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Community</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Community
+                            </a>
+                            <div class="dropdown-menu community-dropdown" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Events</a>
+                                <a class="dropdown-item" href="#">Blogs</a>
+                                <a class="dropdown-item" href="#">Forum</a>
+                                <a class="dropdown-item" href="#">Community Standards</a>
+                                <a class="dropdown-item" href="#">Podcast</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#">More</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                More
+                            </a>
+                            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Buyer Requests</a>
+                                <a class="dropdown-item" href="#">Scale Your Business</a>
+                                <a class="dropdown-item" href="#">Learn - Online Courses</a>
+                                <a class="dropdown-item" href="#">Contacts</a>
+                            </div>
                         </li>
                     </ul>
-                    <ul class="navbar-nav baler ml-auto">
+                    <ul class="navbar-nav  ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link disabled green-font" href="#">Switch to Buying</a>
+                            <a class="nav-link disabled green-font switch-btn" href="#">Switch to Buying</a>
+
+                            <div class="switch-dropdown">
+                                <p>Find professional services and connect with freelancers. We'll set this as your
+                                    default mode.</p>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <div class="user-profile-shape">
-                                <a class="nav-link disabled" href="#">
-                                    <img src="images/1 (1).jpg" alt="">
-                                </a>
+                        <li class="nav-item dropdown user-profile-shape">
+                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img src="images/user/mine36.jpg" alt="">
+                            </a>
+                            <div class="dropdown-menu user-dropdown" aria-labelledby="navbarDropdown">
+                                <div class="part-one">
+                                    <a class="dropdown-item" href="#">Buyer Requests</a>
+                                    <a class="dropdown-item green-font" href="#">Scale Your Business</a>
+                                </div>
+                                <div class="part-one">
+                                    <a class="dropdown-item" href="#">Setting</a>
+                                    <a class="dropdown-item" href="#">English<i class="fas fa-globe"
+                                            style="margin-left: 10px;"></i></a>
+                                    <a class="dropdown-item" href="#"> $ USD</a>
+                                    <a class="dropdown-item" href="#">Help & Support</a>
+                                </div>
+                                <a class="dropdown-item" href="#">Logout</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -92,18 +182,116 @@
         profile main content start
      -------------------------------->
 
-    <!-- title part start -->
-    <!-- <div class="profile-main">
+    <section id="profile-main">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="profile-heading">
+                <div class="col-lg-4">
+                    <div class="left-side">
+                        <div class="user-profile">
+                            <div class="online">
+                                <p><i class="fas fa-circle"></i> Online</p>
+                            </div>
+                            <div class="first-part text-center">
+                                <div class="user-img">
+                                    <img src="images/user/mine 152-152.jpg" alt="">
+                                    <div class="img-overlay">
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+                                </div>
+                                <h4>rakibshekh</h4>
+                                <p>Your satisfaction is our happiness <i class="fas fa-pen"></i> </p>
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li class="rating">5.0</li>
+                                    <li class="number-of-reviews">(10 Reviews)</li>
+                                </ul>
+                                <a href="#">Preview Public Mode</a>
+                            </div>
+                            <div class="second-part row">
+                                <div class="col-lg-7 ">
+                                    <div class="left-part text-left">
+                                        <p><i class="fas fa-map-marker-alt"></i>From</p>
+                                        <p><i class="fas fa-user-alt"></i>Member Since</p>
+                                        <p><i class="far fa-clock"></i>Avg Response Time</p>
+                                        <p><i class="fab fa-telegram-plane"></i>last Delivery</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 text-right">
+                                    <div class="right-part">
+                                        <p>Bangladesh</p>
+                                        <p>Oct 2020</p>
+                                        <p>1 Hour</p>
+                                        <p>Last day</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-part last-part row">
+                                <div class="col-lg-5">
+                                    <div class="left-part text-left">
+                                        <p><i class="far fa-calendar"></i>Available</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 text-right">
+                                    <div class="right-part">
+                                        <a href="">Set Availability</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="earn-badge text-center">
+                            <f class="first-one">
+                                <img src="images/earn adges.png" alt="">
+                            </f>
+                            <img src="images/earn-adges.png" alt="">
+                            <h4>Earn badges and stand out</h4>
+                            <p>Boost your sales, by boosting your expertise.</p>
+                            <a href="">Enroll Now</a>
+                        </div>
+
+                        <div class="user-description">
+                            <div class="description">
+                                <h5>Description</h5>
+                                <h6>Edit Description</h6>
+                                <p>We are a complete team of Graphics Designers, UI/UX Designers, Web Designers, and Web
+                                    Developers. Our Top most Skills were responsive Web Design and Development, Logo,
+                                    Poster, Banner Design. If you need any assistance related to our services please
+                                    feel free to contact us anytime as we are always listening. Thank you, Team Future
+                                    Innovation</p>
+                            </div>
+                            <div class="description language">
+                                <h5>Languages</h5>
+                                <a href="">Add New</a>
+                                <p>English - <span>Conversational</span> <i class="fas fa-pen"></i> <i
+                                        class="fas fa-trash-alt"></i> </p>
+                            </div>
+                            <div class="description tests">
+                                <i class="fas fa-check-circle"></i>
+                                <h5>Tests Taken</h5>
+                                <p>Test your skills, earn more trust - <a href="">Learn More</a></p>
+                                <a href="" class="test-btn">Take a Test</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1">
+
+                </div>
+                <div class="col-lg-7">
+                    <div class="right-side">
+
                     </div>
                 </div>
             </div>
+
         </div>
-    </div> -->
-    <!-- title part end -->
+    </section>
+
+
     <!--------------------------------
         profile main content start
      -------------------------------->
@@ -216,8 +404,85 @@
                             <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                             <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li class="footer-modals"><a href="#"><i class="fas fa-globe"></i>English</a></li>
-                            <li class="footer-modals"><a href="#"><i class="fas fa-dollar-sign"></i>USD</a></li>
+
+                            <!-- language-modal -->
+                            <li type="button" data-toggle="modal" data-target="#exampleModalCenter"
+                                class="footer-modals"><a href="#"><i class="fas fa-globe"></i>English</a></li>
+
+
+                            <!-- Modal -->
+                            <div class="modal language-modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Choose a language</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-check"></i>English</a></li>
+                                                <li><a href="#"><i class="fas fa-check"></i>Deustch</a></li>
+                                                <li><a href="#"><i class="fas fa-check"></i>Espanol</a></li>
+                                                <li><a href="#"><i class="fas fa-check"></i>Francis</a></li>
+                                                <li><a href="#"><i class="fas fa-check"></i>Portugues</a></li>
+                                                <li><a href="#"><i class="fas fa-check"></i>Italiano</a></li>
+                                                <li><a href="#"><i class="fas fa-check"></i>Nederlands</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- dollar-modal -->
+                            <li type="button" data-toggle="modal" data-target="#exampleModalCenterTwo"
+                                class="footer-modals"><a href="#"><i class="fas fa-dollar-sign"></i>USD</a></li>
+
+                            <!-- Modal -->
+                            <div class="modal dollar-modal fade" id="exampleModalCenterTwo" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTwo" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Choose a currency</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-check"></i>United States Dollar
+                                                        <br> <span>USD- $</span>
+                                                    </a>
+                                                </li>
+                                                <li><a href="#"><i class="fas fa-check"></i>United States Dollar
+                                                        <br> <span>USD- $</span>
+                                                    </a>
+                                                </li>
+                                                <li><a href="#"><i class="fas fa-check"></i>United States Dollar
+                                                        <br> <span>USD- $</span>
+                                                    </a>
+                                                </li>
+                                                <li><a href="#"><i class="fas fa-check"></i>United States Dollar
+                                                        <br> <span>USD- $</span>
+                                                    </a>
+                                                </li>
+                                                <li><a href="#"><i class="fas fa-check"></i>United States Dollar
+                                                        <br> <span>USD- $</span>
+                                                    </a>
+                                                </li>
+                                                <li><a href="#"><i class="fas fa-check"></i>United States Dollar
+                                                        <br> <span>USD- $</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <li class="footer-man"><a href="#"><i class="fas fa-male"></i></a></li>
                         </ul>
                     </div>
@@ -225,6 +490,9 @@
             </div>
         </div>
     </section>
+
+
+
     <!-- end-footer ends -->
 
 
@@ -233,6 +501,9 @@
 
 
     <!-- Optional JavaScript -->
+
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">

@@ -1819,3 +1819,683 @@
 /*******************************
         scaleBusiness ends
  ********************************/
+
+/*******************************
+        contact-page Start
+ ********************************/
+#contact-page {
+    padding: 40px;
+}
+
+#contact-page .contact-header h2 {
+    font-weight: 400;
+    color: #404145;
+    font-size: 40px;
+    letter-spacing: 1px;
+    padding-bottom: 40px;
+}
+
+
+#contact-page .contact-header .search form {
+    float: right;
+    position: relative;
+}
+
+#contact-page .contact-header .search form input {
+    background: transparent;
+    width: 155px;
+    padding: 7px 3px;
+    font-size: 14px;
+    border: 0;
+    border-bottom: 1px solid #dadbdd;
+    border-radius: 0;
+    -webkit-transition: border-color .2s, width .2s;
+    -o-transition: border-color .2s, width .2s;
+    transition: border-color .2s, width .2s;
+    float: right;
+    border: 0;
+    border-bottom: 1px solid rgba(122, 125, 133, 0.300);
+}
+
+#contact-page .contact-header .search form input:focus-visible {
+    width: 140%;
+    outline: 0;
+    border-bottom: 1px solid #1dbf73;
+}
+
+#contact-page .contact-header .search form button {
+    z-index: 1;
+    top: 6px;
+    right: 3px;
+    width: 19px;
+    height: 19px;
+    border: none;
+    background: none;
+    float: right;
+    margin-left: -19px;
+}
+
+#contact-page .contact-header .search form button i {
+    font-size: 16px;
+    color: #afb1b8;
+    margin-top: 15px;
+}
+
+
+
+#contact-page .contact-body .nav-tabs {
+    border-bottom: 1px solid rgba(122, 125, 133, 0.300);
+}
+
+#contact-page .contact-body .nav-tabs .nav-item.show .nav-link,
+#contact-page .contact-body .nav-tabs .nav-link {
+    background-color: transparent;
+    padding: 3px 14px 8px 0px;
+    color: #95979d;
+    font-size: 14px;
+    border: none;
+    line-height: 42px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: color .1s ease-in-out;
+    -o-transition: color .1s ease-in-out;
+    transition: color .1s ease-in-out;
+    position: relative;
+    margin-right: 8px;
+    -webkit-transition: all linear 0.4s 0s;
+    -moz-transition: all linear 0.4s 0s;
+    -o-transition: all linear 0.4s 0s;
+    transition: all linear 0.4s 0s;
+}
+
+#contact-page .contact-body .nav-tabs .nav-item.show .nav-link span,
+#contact-page .contact-body .nav-tabs .nav-link span {
+    background: #95979d;
+    color: white;
+    font-size: 12px;
+    height: 22px;
+    width: 22px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+#contact-page .contact-body .nav-tabs .nav-item.show .nav-link:hover span,
+#contact-page .contact-body .nav-tabs .nav-link:hover span {
+    background: #1dbf73;
+}
+
+
+#contact-page .contact-body .nav-tabs .nav-item.show .nav-link.active,
+#contact-page .contact-body .nav-tabs .nav-link.active {
+    position: relative;
+    background-color: transparent;
+    color: #222325;
+}
+
+#contact-page .contact-body .nav-tabs .nav-item.show .nav-link.active span,
+#contact-page .contact-body .nav-tabs .nav-link.active span {
+    background: #1dbf73;
+}
+
+#contact-page .contact-body .nav-tabs .nav-item.show .nav-link.active::after,
+#contact-page .contact-body .nav-tabs .nav-link.active::after {
+    position: absolute;
+    content: '';
+    height: 12px;
+    width: 12px;
+    bottom: -10px;
+    left: 50%;
+    border-top: 1px solid rgba(122, 125, 133, 0.300);
+    border-left: 1px solid rgba(122, 125, 133, 0.300);
+    transform: rotate(45deg) translateX(-50%);
+    z-index: 222;
+    background: #f7f7f7;
+    opacity: 1;
+}
+
+#contact-page .contact-body .nav-tabs .nav-item.show .nav-link:hover,
+#contact-page .contact-body .nav-tabs .nav-link:hover {
+    background-color: transparent;
+    color: #222325;
+}
+
+
+
+#contact-page .contact-body .buyer-purchase {
+    border: 1px solid rgba(122, 125, 133, 0.300);
+    margin-top: 20px;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+
+#contact-page .contact-body .buyer-purchase h5 {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+    color: #0e0e0f;
+}
+
+#contact-page .contact-body .buyer-header {
+    border: 1px solid rgba(122, 125, 133, 0.300);
+    padding: 5px 20px;
+    border-top: none;
+    background-color: #fff;
+}
+
+#contact-page .contact-body .buyer-header p {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #999;
+}
+
+#contact-page .contact-body .buyer-header a {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #999;
+}
+
+#contact-page .contact-body .buyer-header .last-div {
+    padding-left: 40px;
+}
+
+#contact-page .contact-body .buyer-details {
+    border: 1px solid rgba(122, 125, 133, 0.300);
+    padding: 20px 20px 20px;
+    border-top: none;
+    background-color: #fff;
+}
+
+#contact-page .contact-body .buyer-details .round-img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+#contact-page .contact-body .buyer-details h6 {
+    font-size: 14px;
+    color: #4a73e8;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+
+#contact-page .contact-body .buyer-details a {
+    display: block;
+    color: #1dbf73;
+    font-size: 14px;
+    margin-left: 72px;
+}
+
+#contact-page .contact-body .buyer-details .count p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(85, 84, 84);
+    padding-top: 25px;
+}
+
+#contact-page .contact-body .buyer-details .last-div p {
+    display: inline-block;
+}
+
+#contact-page .contact-body .buyer-details .last-div {
+    padding-left: 40px;
+}
+
+#contact-page .contact-body .buyer-details .last-div a {
+    display: inline-block;
+    margin-left: 0px;
+}
+
+#contact-page .contact-body .buyer-details .last-div .message-box {
+    padding-left: 28px;
+}
+
+#contact-page .contact-body .buyer-details .last-div .message-box i {
+    font-size: 13px;
+    border-radius: 5px;
+    color: #787879;
+    background-color: #fff;
+    padding: 9px 11px;
+    margin-right: 5px;
+    border: 1px solid rgba(122, 125, 133, 0.300);
+}
+
+#contact-page .contact-body .buyer-details .last-div .send-offer {
+    font-size: 13px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #1dbf73;
+    padding: 5px 14px;
+    border: 1px solid #1dbf73;
+}
+
+#contact-page .contact-body .buyer-details .seller-count .message-box {
+    padding-left: 125px;
+}
+
+
+/*******************************
+        contact-page ends
+ ********************************/
+/*******************************
+        requests-page start
+ ********************************/
+
+#requests-page {
+    padding: 40px;
+}
+
+#requests-page .requests-header h2 {
+    font-weight: 400;
+    color: #404145;
+    font-size: 40px;
+    letter-spacing: 1px;
+    padding-bottom: 40px;
+}
+
+
+#requests-page .requests-header .search form {
+    float: right;
+    position: relative;
+}
+
+#requests-page .requests-header .search form input {
+    background: transparent;
+    width: 155px;
+    padding: 7px 3px;
+    font-size: 14px;
+    border: 0;
+    border-bottom: 1px solid #dadbdd;
+    border-radius: 0;
+    -webkit-transition: border-color .2s, width .2s;
+    -o-transition: border-color .2s, width .2s;
+    transition: border-color .2s, width .2s;
+    float: right;
+    border: 0;
+    border-bottom: 1px solid rgba(122, 125, 133, 0.300);
+}
+
+#requests-page .requests-header .search form input:focus-visible {
+    width: 140%;
+    outline: 0;
+    border-bottom: 1px solid #1dbf73;
+}
+
+#requests-page .requests-header .search form button {
+    z-index: 1;
+    top: 6px;
+    right: 3px;
+    width: 19px;
+    height: 19px;
+    border: none;
+    background: none;
+    float: right;
+    margin-left: -19px;
+}
+
+#requests-page .requests-header .search form button i {
+    font-size: 16px;
+    color: #afb1b8;
+    margin-top: 15px;
+}
+
+
+
+#requests-page .requests-body .nav-tabs {
+    border-bottom: 1px solid rgba(122, 125, 133, 0.300);
+}
+
+#requests-page .requests-body .nav-tabs .nav-item.show .nav-link,
+#requests-page .requests-body .nav-tabs .nav-link {
+    background-color: transparent;
+    padding: 3px 14px 8px 0px;
+    color: #95979d;
+    font-size: 14px;
+    border: none;
+    line-height: 42px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: color .1s ease-in-out;
+    -o-transition: color .1s ease-in-out;
+    transition: color .1s ease-in-out;
+    position: relative;
+    margin-right: 8px;
+    -webkit-transition: all linear 0.4s 0s;
+    -moz-transition: all linear 0.4s 0s;
+    -o-transition: all linear 0.4s 0s;
+    transition: all linear 0.4s 0s;
+}
+
+#requests-page .requests-body .nav-tabs .nav-item.show .nav-link span,
+#requests-page .requests-body .nav-tabs .nav-link span {
+    background: #95979d;
+    color: white;
+    font-size: 12px;
+    height: 22px;
+    width: 22px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+#requests-page .requests-body .nav-tabs .nav-item.show .nav-link:hover span,
+#requests-page .requests-body .nav-tabs .nav-link:hover span {
+    background: #1dbf73;
+}
+
+
+#requests-page .requests-body .nav-tabs .nav-item.show .nav-link.active,
+#requests-page .requests-body .nav-tabs .nav-link.active {
+    position: relative;
+    background-color: transparent;
+    color: #222325;
+}
+
+#requests-page .requests-body .nav-tabs .nav-item.show .nav-link.active span,
+#requests-page .requests-body .nav-tabs .nav-link.active span {
+    background: #1dbf73;
+}
+
+#requests-page .requests-body .nav-tabs .nav-item.show .nav-link.active::after,
+#requests-page .requests-body .nav-tabs .nav-link.active::after {
+    position: absolute;
+    content: '';
+    height: 12px;
+    width: 12px;
+    bottom: -10px;
+    left: 50%;
+    border-top: 1px solid rgba(122, 125, 133, 0.300);
+    border-left: 1px solid rgba(122, 125, 133, 0.300);
+    transform: rotate(45deg) translateX(-50%);
+    z-index: 222;
+    background: #f7f7f7;
+    opacity: 1;
+}
+
+#requests-page .requests-body .nav-tabs .nav-item.show .nav-link:hover,
+#requests-page .requests-body .nav-tabs .nav-link:hover {
+    background-color: transparent;
+    color: #222325;
+}
+
+
+#requests-page .requests-body i {
+    padding-right: 10px;
+}
+
+#requests-page .requests-body nav p {
+    float: right;
+    margin-top: -45px;
+    color: #95979d;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+#requests-page .requests-body .dropdown .btn {
+    width: 175px;
+    height: 40px;
+    color: #999;
+    background-color: #fff;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid rgba(122, 125, 133, 0.300);
+}
+
+#requests-page .requests-body .dropdown .dropdown-menu a {
+    color: #999;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#requests-page .requests-body .dropdown .dropdown-menu {
+    width: 175px;
+}
+
+
+
+#requests-page .requests-body .buyer-requests {
+    border: 1px solid rgba(122, 125, 133, 0.300);
+    margin-top: 20px;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+
+#requests-page .requests-body .buyer-requests h5 {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+    color: #0e0e0f;
+}
+
+#requests-page .requests-body .requests-header {
+    border: 1px solid rgba(122, 125, 133, 0.300);
+    padding: 5px 20px;
+    border-top: none;
+    background-color: #fff;
+}
+
+#requests-page .requests-body .requests-header p {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #999;
+    float: left;
+    margin-top: 0px;
+}
+
+#requests-page .requests-body .requests-header .second-div {
+    padding-left: 40px;
+}
+
+#requests-page .requests-body .requests-body {
+    border: 1px solid rgba(122, 125, 133, 0.300);
+    padding: 20px;
+    border-top: none;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+#requests-page .requests-body .requests-body:hover {
+    background-color: #f7f7f7;
+}
+
+#requests-page .requests-body .requests-body .offer h3 {
+    font-weight: 600;
+    color: #404145;
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+
+#requests-page .requests-body .requests-body .offer p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #555;
+    padding-bottom: 20px;
+}
+
+#requests-page .requests-body .requests-body .offer li {
+    float: left;
+}
+
+#requests-page .requests-body .requests-body .offer li p {
+    color: #999;
+    font-size: 14px;
+    padding: 0px 20px 10px 0px;
+}
+
+#requests-page .requests-body .requests-body .second-div p {
+    color: #555;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+#requests-page .requests-body .requests-body .price p {
+    color: #555;
+    font-size: 14px;
+}
+
+#requests-page .requests-body .requests-body .request-profile .round-img {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+
+#requests-page .requests-body .requests-body .request-profile h6 {
+    font-size: 24px;
+    color: #1dbf73;
+    font-weight: 600;
+    display: inline-block;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#requests-page .requests-body .requests-body .request-profile p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #555;
+    padding-bottom: 20px;
+}
+
+#requests-page .requests-body .requests-body .request-profile li {
+    float: left;
+}
+
+#requests-page .requests-body .requests-body .request-profile li p {
+    color: #999;
+    font-size: 14px;
+    padding: 0px 20px 10px 0px;
+}
+
+
+#requests-page .requests-body .active-header {
+    border: 1px solid rgba(122, 125, 133, 0.300);
+    padding: 5px 20px;
+    border-top: none;
+    background-color: #fff;
+}
+
+#requests-page .requests-body .active-header p {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #999;
+    float: left;
+    margin-top: 0px;
+}
+
+#requests-page .requests-body .active-header span {
+    padding-left: 30px;
+}
+
+#requests-page .requests-body .active-header .second-div {
+    padding-left: 40px;
+}
+
+#requests-page .requests-body .active-body {
+    border: 1px solid rgba(122, 125, 133, 0.300);
+    padding: 20px 20px 40px;
+    border-top: none;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+#requests-page .requests-body .active-body:hover {
+    background-color: #f7f7f7;
+}
+
+#requests-page .requests-body .active-body .date {
+    padding: 0px 0px 0px 10px;
+}
+
+#requests-page .requests-body .active-body p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(94, 92, 92);
+}
+
+#requests-page .requests-body .active-body .second-div {
+    padding-left: 40px;
+}
+
+#requests-page .requests-body .active-body .second-div .round-img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+
+#requests-page .requests-body .active-body .second-div .details {
+    padding: 0px 150px 0px 30px;
+}
+
+#requests-page .requests-body .active-body .second-div p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(94, 92, 92);
+}
+
+#requests-page .requests-body .active-body .second-div button {
+    background-color: #fff;
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: #999;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid rgba(122, 125, 133, 0.300);
+    margin: 10px 10px 10px 0px;
+}
+
+
+#requests-page .requests-body .active-body .days a {
+    color: #4a73e8;
+    font-size: 12px;
+    display: none;
+    transition: all 0.2s ease;
+    position: absolute;
+}
+
+#requests-page .requests-body .active-body:hover .days a,
+#requests-page .requests-body .active-body:hover .last-div .send-offer {
+    display: inline-block;
+}
+
+#requests-page .requests-body .active-body .last-div {
+    padding: 0px 0px 0px 6px;
+}
+
+#requests-page .requests-body .active-body .days p,
+#requests-page .requests-body .active-body .last-div p {
+    padding: 0px 0px 30px 0px;
+}
+
+#requests-page .requests-body .active-body .last-div .send-offer {
+    font-size: 13px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #1dbf73;
+    padding: 5px 14px;
+    border: 1px solid #1dbf73;
+    display: none;
+    transition: all 0.2s ease;
+    position: absolute;
+}
+
+/*******************************
+        requests-page ends
+ ********************************/

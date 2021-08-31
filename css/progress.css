@@ -1,0 +1,25 @@
+.main-progreess {
+  height: 10px;
+  width: 165px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.1);
+  /* border-radius:15px; */
+  margin-top: 7px;
+}
+.main-progreess .bg-countone {
+  height: 100%;
+  /* width: 10%; */
+  background: #1dbf73;
+  /* border-radius: 15px; */
+  text-align: center;
+}
+.main-progreess .bg-countone .n-countone {
+  color: #95979d;
+  font-size: 16;
+  line-height: 10px;
+}
+
+.main-progreess ul li {
+  display: inline-block;
+  float: left;
+}

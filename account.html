@@ -14,8 +14,9 @@
 
     <!-- arman CSS -->
     <link rel="stylesheet" href="css/arman.css">
+    <link rel="stylesheet" href="css/parves.css">
 
-    <title>My Contacts</title>
+    <title>Sikhbo Ami. CPA Marketing. Fiverr </title>
 
     <!-- favicon -->
     <link rel="icon" href="images/fav.png" type="image/gif" sizes="16x16">
@@ -177,221 +178,158 @@
     </section>
     <!-- profile-navbar ends -->
 
-
     <!--------------------------------
-        contact-page content start
+        account main content start
      -------------------------------->
-    <section id="contact-page">
-        <div class="container">
-
-            <div class="contact-header">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <h2>My Contacts</h2>
-                    </div>
-                    <div class="col-lg-4 search">
-                        <form action="/activities/search/sales" method="get">
-                            <button type="submit" class="btn-search">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </button>
-                            <input type="search" name="act_search_query" placeholder="Search My History..." value=""
-                                class="" />
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="contact-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <nav>
-                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
-                                        href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">MY
-                                        BUYERS<span class="badge">7</span></a>
-                                    <a class="nav-item nav-link" id="nav-ACTIVE-tab" data-toggle="tab"
-                                        href="#nav-ACTIVE" role="tab" aria-controls="nav-ACTIVE"
-                                        aria-selected="false">MY SELLERS<span class="badge">1</span></a>
+     <section id="account">
+         <div class="container">
+             <div class="custome_container m-auto">
+                 <div class="row">
+                     <div class="col-lg-2">
+                         <ul>
+                             <li>
+                                 <a class="active" href="account.html">Account</a>
+                                 <a href="security.html">Security</a>
+                                 <a href="Notification.html">Notifications</a>
+                                 <a href="Billing.html">Billing Information</a>
+                                 <a href="Balance.html">Balance</a>
+                                 <a href="form w-9.html">Form W-9</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="col-lg-10">
+                         <div class="account_detail">
+                             <div class="label">
+                                 <label>Need to update your public profile?</label>
+                                 <a href="#">Go to My Profile</a>
+                             </div>
+                             <form action="post">
+                                 <div class="form-group">
+                                     <div class="row">
+                                         <div class="col-lg-4">
+                                             <label>FULL NAME</label>
+                                         </div>
+                                         <div class="col-lg-8">
+                                             <input type="text">
+                                         </div>
+                                     </div>
+                                    <div class="input">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                     <div class="row">
+                                         <div class="col-lg-4">
+                                             <label>EMAIL</label>
+                                         </div>
+                                         <div class="col-lg-8">
+                                             <input type="text" value="c**********s@gmail.com">
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="form-group">
+                                     <div class="row">
+                                         <div class="col-lg-4">
+                                             <label>ONLINE STATUS 
+                                                 <span class="online-status"><em></em> </span>
+                                             </label>
+                                             <br>
+                                             <p>When online, your Gigs are visible under the Online search filter.</p>
+                                         </div>
+                                         <div class="col-lg-8">
+                                             <select name="" id="">
+                                                 <option value="">GO OFFLINE FOR...</option>
+                                                 <option value="">1 HOUR</option>
+                                                 <option value="">1 DAY</option>
+                                                 <option value="">1 WEEK</option>
+                                                 <option value="">FOREVER</option>
+                                             </select>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="form-group save_changes">
+                                     <div class="row">
+                                         <div class="col-lg-12">
+                                             <button type="submit">Save Changes</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </form>
+                             <div class="account_deactivation">
+                                 <div class="row">
+                                     <div class="col-lg-4">
+                                         <label>ACCOUNT DEACTIVATION</label>
+                                     </div>
+                                     <div class="col-lg-8">
+                                         <div class=" what_text">
+                                             <b><p>What happens when you deactivate your account?</p></b>
+                                             <ul>
+                                                 <li>Your profile and Gigs won't be shown on Fiverr anymore. <i class="fa fa-question-circle"></i></li>
+                                                 <li>Active orders will be cancelled. <i class="fa fa-question-circle"></i></li>
+                                                 <li>You won't be able to re-activate your Gigs.</li>
+                                             </ul>
+                                         </div>
+                                     </div>
+                                    </div>
                                 </div>
-                            </nav>
-                            <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-                                    aria-labelledby="nav-home-tab">
-                                    <div class="buyer-purchase">
-                                        <h5>BUYERS WHO HAVE PURCHASED GIGS FROM YOU.</h5>
+                                <div class="leaving">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <label>I'm leaving because...</label>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <select name="" id="option_select">
+                                                <option value="Choose a reason">Choose a reason</option>
+                                                <optgroup label="Account">
+                                                    <option value="">Unsubscribe from Fiverr emails</option>
+                                                    <option value="">I want to change my username</option>
+                                                    <option value="">I have another Fiverr account</option>
+                                                    <option value="">Other</option>
+                                                </optgroup>
+                                                <optgroup label="Selling">
+                                                    <option value="">Not getting enough orders</option>
+                                                    <option value="">Negative experience with buyer/s</option>
+                                                    <option value="">I get too many orders</option>
+                                                    <option value="">Fiverr is complicated or hard to use</option>
+                                                    <option value="">I'm unhappy with Fiverr's policies</option>
+                                                    <option value="">Other</option>
+                                                </optgroup>
+                                                <optgroup label="Buying">
+                                                    <option value="">I can't find what I need on Fiverr</option>
+                                                    <option value="">Fiverr is complicated or hard to use</option>
+                                                    <option value="">Negative experience with seller/s</option>
+                                                    <option value="">I'm unhappy with Fiverr's policies</option>
+                                                    <option value="">Other</option>
+                                                </optgroup>
+                                                <option value="">Something else</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="buyer-header">
+                                    <div class="optional" id="optional">
                                         <div class="row">
                                             <div class="col-lg-4">
-                                                <p>BUYER NAME</p>
+                                                <label class="tellus">Tell us more (optional)</label>
                                             </div>
-                                            <div class="col-lg-3">
-                                                <a href="">COMPLETED ORDERS</a>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <a href=""> AMOUNT SPENT</a>
-                                            </div>
-                                            <div class="col-lg-3 last-div">
-                                                <a href=""> LAST ORDER</a>
+                                            <div class="col-lg-8">
+                                                <input type="text"  placeholder="Help us become better..." />
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="buyer-details">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <img class="round-img" src="images/user/client-136.jpg" alt="">
-                                                <h6>Qureshiakram460</h6>
-                                                <a href="">User Profile <span>|</span> History</a>
-                                            </div>
-                                            <div class="col-lg-3 count">
-                                                <p>1</p>
-                                            </div>
-                                            <div class="col-lg-2 count">
-                                                <p>$50</p>
-                                            </div>
-                                            <div class="col-lg-3 last-div count">
-                                                <p> Apr 11, 21</p>
-                                                <a href="#" class="message-box"><i class="fas fa-comment-alt"></i></a>
-                                                <a href="#" class="send-offer">Send Offer</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="buyer-details">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <img class="round-img" src="images/user/mine36.jpg" alt="">
-                                                <h6>Qureshiakram460</h6>
-                                                <a href="">User Profile <span> |</span> History</a>
-                                            </div>
-                                            <div class="col-lg-3 count">
-                                                <p>1</p>
-                                            </div>
-                                            <div class="col-lg-2 count">
-                                                <p>$50</p>
-                                            </div>
-                                            <div class="col-lg-3 last-div count">
-                                                <p> Apr 11, 21</p>
-                                                <a href="#" class="message-box"><i class="fas fa-comment-alt"></i></a>
-                                                <a href="#" class="send-offer">Send Offer</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="buyer-details">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <img class="round-img" src="images/user/client-136.jpg" alt="">
-                                                <h6>Qureshiakram460</h6>
-                                                <a href="">User Profile <span>|</span> History</a>
-                                            </div>
-                                            <div class="col-lg-3 count">
-                                                <p>1</p>
-                                            </div>
-                                            <div class="col-lg-2 count">
-                                                <p>$50</p>
-                                            </div>
-                                            <div class="col-lg-3 last-div count">
-                                                <p> Apr 11, 21</p>
-                                                <a href="#" class="message-box"><i class="fas fa-comment-alt"></i></a>
-                                                <a href="#" class="send-offer">Send Offer</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="buyer-details">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <img class="round-img" src="images/user/mine36.jpg" alt="">
-                                                <h6>Qureshiakram460</h6>
-                                                <a href="">User Profile <span> |</span> History</a>
-                                            </div>
-                                            <div class="col-lg-3 count">
-                                                <p>1</p>
-                                            </div>
-                                            <div class="col-lg-2 count">
-                                                <p>$50</p>
-                                            </div>
-                                            <div class="col-lg-3 last-div count">
-                                                <p> Apr 11, 21</p>
-                                                <a href="#" class="message-box"><i class="fas fa-comment-alt"></i></a>
-                                                <a href="#" class="send-offer">Send Offer</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="buyer-details">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <img class="round-img" src="images/user/client-136.jpg" alt="">
-                                                <h6>Qureshiakram460</h6>
-                                                <a href="">User Profile <span>|</span> History</a>
-                                            </div>
-                                            <div class="col-lg-3 count">
-                                                <p>1</p>
-                                            </div>
-                                            <div class="col-lg-2 count">
-                                                <p>$50</p>
-                                            </div>
-                                            <div class="col-lg-3 last-div count">
-                                                <p> Apr 11, 21</p>
-                                                <a href="#" class="message-box"><i class="fas fa-comment-alt"></i></a>
-                                                <a href="#" class="send-offer">Send Offer</a>
-                                            </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 deactivate">
+                                            <button type="button" id="deactive_button">Deactivate Account</button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="nav-ACTIVE" role="tabpanel"
-                                    aria-labelledby="nav-ACTIVE-tab">
-                                    <div class="buyer-purchase">
-                                        <h5>SELLERS FROM WHOM YOU HAVE PURCHASED GIGS.</h5>
-                                    </div>
-                                    <div class="buyer-header">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <p>BUYER NAME</p>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <a href="">COMPLETED ORDERS</a>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <a href=""> AMOUNT SPENT</a>
-                                            </div>
-                                            <div class="col-lg-3 last-div">
-                                                <a href=""> LAST ORDER</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="buyer-details">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <img class="round-img" src="images/user/client-2.jpg" alt="">
-                                                <h6>shoha420</h6>
-                                                <a href="">User Profile <span>|</span> History</a>
-                                            </div>
-                                            <div class="col-lg-3 count">
-                                                <p>1</p>
-                                            </div>
-                                            <div class="col-lg-2 count">
-                                                <p>$50</p>
-                                            </div>
-                                            <div class="col-lg-3 last-div count seller-count">
-                                                <p> Apr 11, 21</p>
-                                                <a href="#" class="message-box"><i class="fas fa-comment-alt"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
 
-        <!-- order main part end -->
-    </section>
+     </section>
+     
     <!--------------------------------
-        contact-page content Ends
+        account main content end
      -------------------------------->
 
     <!-- footer-part start -->
@@ -605,13 +543,14 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+        </script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>

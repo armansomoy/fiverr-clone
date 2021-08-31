@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/progress.css">
+  <link rel="stylesheet" href="css/arman.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Your Order Page</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="images/fav.png" type="image/gif" sizes="16x16">
+
+</head>
+
+<body>
+  <!-- profile-navbar start -->
+  <section id="profile-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container">
+        <a class="navbar-brand" href="dashboard.html"><img src="images/fiver_logo.png" alt="" srcset=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="dashboard.html">Dashboard </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Messages
+              </a>
+              <!-- <div id="message-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <ul class="message-header nav nav-tabs" id="myTab" role="tablist">
+
+                                <li class="nav-item">
+                                    <a class="nav-link active nav-tab-notification" id="home-tab" data-toggle="tab"
+                                        href="#home" role="tab" aria-controls="home" aria-selected="true"><i
+                                            class="fas fa-bullhorn"></i>Notification (0)
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+                                        role="tab" aria-controls="profile" aria-selected="false"><i
+                                            class="fas fa-comment"></i> Inbox (0)</a>
+                                </li>
+
+                            </ul>
+
+                            <div class="tab-content message-body" id="myTabContent">
+
+                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <i><i class="far fa-bell"></i></i>
+                                        </div>
+                                        <div class="col-lg-6">
+
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+                                                praesentium?</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="profile" role="tabpanel"
+                                    aria-labelledby="profile-tab"> temporibus a, voluptate et repudiandae in
+                                    illo rerum. Quia accusantium maiores dicta fugiat dol.</div>
+                            </div>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div> -->
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled" href="order.html">Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="gig.html">Gigs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Analytics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="Earning.html">Earnings</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Community
+              </a>
+              <div class="dropdown-menu community-dropdown" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Events</a>
+                <a class="dropdown-item" href="#">Blogs</a>
+                <a class="dropdown-item" href="#">Forum</a>
+                <a class="dropdown-item" href="#">Community Standards</a>
+                <a class="dropdown-item" href="#">Podcast</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                More
+              </a>
+              <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="requests.html">Buyer Requests</a>
+                <a class="dropdown-item" href="scaleBusiness.html">Scale Your Business</a>
+                <a class="dropdown-item" href="#">Learn - Online Courses</a>
+                <a class="dropdown-item" href="contacts.html">Contacts</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav  ml-auto">
+            <li class="nav-item">
+              <a class="nav-link disabled green-font switch-btn" href="#">Switch to Buying</a>
+
+              <div class="switch-dropdown">
+                <p>Find professional services and connect with freelancers. We'll set this as your
+                  default mode.</p>
+              </div>
+            </li>
+            <li class="nav-item dropdown user-profile-shape">
+              <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="images/user/mine36.jpg" alt="">
+              </a>
+              <div class="dropdown-menu user-dropdown" aria-labelledby="navbarDropdown">
+                <div class="part-one">
+                  <a class="dropdown-item" href="index.html">Profile</a>
+                  <a class="dropdown-item green-font" href="#">Refer & Get up to $100</a>
+                </div>
+                <div class="part-one">
+                  <a class="dropdown-item" href="account.html">Setting</a>
+                  <a class="dropdown-item" href="#">English<i class="fas fa-globe" style="margin-left: 10px;"></i></a>
+                  <a class="dropdown-item" href="#"> $ USD</a>
+                  <a class="dropdown-item" href="#">Help & Support</a>
+                </div>
+                <a class="dropdown-item" href="#">Logout</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="user-dollar-shape">
+                <p>$25.33</p>
+                <a class="nav-link disabled " href="#"></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- profile-navbar ends -->
+
+
+
+  <!-- order main part start-->
+  <div class="order-main">
+    <div class="container">
+      <div class="sixty_margin">
+        <div class="order-header">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <h3>Manage Orders</h3>
+              </div>
+              <div class="col-lg-4 p-0">
+                <div class="serch">
+                  <form action="/activities/search/sales" method="get">
+                    <button type="submit" class="btn-search">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                    <input type="search" name="act_search_query" placeholder="Search My History..." value="" class="" />
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- order details start -->
+        <div class="order-details">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                      aria-controls="nav-home" aria-selected="true">PRIORITY<span class="badge">4</span></a>
+                    <a class="nav-item nav-link" id="nav-ACTIVE-tab" data-toggle="tab" href="#nav-ACTIVE" role="tab"
+                      aria-controls="nav-ACTIVE" aria-selected="false">ACTIVE</a>
+                    <a class="nav-item nav-link" id="nav-LATE-tab" data-toggle="tab" href="#nav-LATE" role="tab"
+                      aria-controls="nav-LATE" aria-selected="false">LATE</a>
+                    <a class="nav-item nav-link" id="nav-DELIVERED-tab" data-toggle="tab" href="#nav-DELIVERED"
+                      role="tab" aria-controls="nav-DELIVERED" aria-selected="false">DELIVERED</a>
+                    <a class="nav-item nav-link" id="nav-COMPLETED-tab" data-toggle="tab" href="#nav-COMPLETED"
+                      role="tab" aria-controls="nav-COMPLETED" aria-selected="false">COMPLETED</a>
+                    <a class="nav-item nav-link" id="nav-CANCELLED-tab" data-toggle="tab" href="#nav-CANCELLED"
+                      role="tab" aria-controls="nav-contact" aria-selected="false">CANCELLED</a>
+                    <a class="nav-item nav-link" id="nav-STARRED-tab" data-toggle="tab" href="#nav-STARRED" role="tab"
+                      aria-controls="nav-contact" aria-selected="false">STARRED</a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="orders">
+                      <h3>COMPLETED ORDERS</h3>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Buyer</th>
+                            <th scope="col">Gig</th>
+                            <th scope="col">Due On</th>
+                            <th scope="col">Delivered At</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Note</th>
+                            <th scope="col">Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+
+                              <ul>
+                                <li><i class="far fa-star"></i>
+                                  <i class="fas fa-star text-warning stared stared-display-none" id="fas-star-w"></i>
+                                </li>
+                                <li class="user-profile-shape"><img src="images/user/client-136.jpg" class="img-fluid"
+                                    alt=""></li>
+                                <li>name</li>
+                              </ul>
+                            </td>
+                            <td>
+                              <span class="badge badge-success" style="background: #78cdd2;">COMPLETED</span>
+                              <a href="" class="order-gig">convert psd to html, xd to html, ske</a>
+                            </td>
+                            <td>Apr 26, 2020</td>
+                            <td>Apr 26, 2020</td>
+                            <td> $5</td>
+                            <td>
+                              <div class="add-noote text-center">
+                                <i class="far fa-sticky-note" id="note-toggle" onclick="note_toggle()"></i>
+                                <div class="note-area">
+                                  <form action="">
+                                    <textarea name="" id="" cols="40" rows="5"
+                                      placeholder="Type a note to yourself here ..."></textarea>
+                                    <ul class="btn-ul">
+                                      <li class="p-button"><a href="" class="btn btn-save">Save</a></li>
+                                      <li class="p-button"><a class="btn btn-cencel" onclick="note_toggle()">Cancel</a>
+                                      </li>
+                                    </ul>
+                                  </form>
+                                </div>
+                              </div>
+                            </td>
+                            <td><span class="badge badge-success">COMPLETED</span></td>
+                          </tr>
+                        </tbody>
+
+                        <tbody>
+                          <tr>
+                            <td>
+
+                              <ul>
+                                <li><i class="far fa-star"></i>
+                                  <i class="fas fa-star text-warning stared stared-display-none" id="fas-star-w"></i>
+                                </li>
+                                <li class="user-profile-shape"><img src="images/user/client-2.jpg" class="img-fluid"
+                                    alt=""></li>
+                                <li>name</li>
+                              </ul>
+                            </td>
+                            <td>
+                              <span class="badge badge-success" style="background: #78cdd2;">COMPLETED</span>
+                              <a href="" class="order-gig">convert psd to html, xd to html, ske</a>
+                            </td>
+                            <td>Apr 26, 2020</td>
+                            <td>Apr 26, 2020</td>
+                            <td> $5</td>
+                            <td>
+                              <div class="add-noote text-center">
+                                <i class="far fa-sticky-note" id="note-toggle" onclick="note_toggle()"></i>
+                                <div class="note-area">
+                                  <form action="">
+                                    <textarea name="" id="" cols="40" rows="5"
+                                      placeholder="Type a note to yourself here ..."></textarea>
+                                    <ul class="btn-ul">
+                                      <li class="p-button"><a href="" class="btn btn-save">Save</a></li>
+                                      <li class="p-button"><a class="btn btn-cencel" onclick="note_toggle()">Cancel</a>
+                                      </li>
+                                    </ul>
+                                  </form>
+                                </div>
+                              </div>
+                            </td>
+                            <td><span class="badge badge-success">COMPLETED</span></td>
+                          </tr>
+                        </tbody>
+
+                        <tbody>
+                          <tr>
+                            <td>
+
+                              <ul>
+                                <li><i class="far fa-star"></i>
+                                  <i class="fas fa-star text-warning stared stared-display-none" id="fas-star-w"></i>
+                                </li>
+                                <li class="user-profile-shape"><img src="images/user/mine36.jpg" class="img-fluid"
+                                    alt=""></li>
+                                <li>name</li>
+                              </ul>
+                            </td>
+                            <td>
+                              <span class="badge badge-success" style="background: #78cdd2;">COMPLETED</span>
+                              <a href="" class="order-gig">convert psd to html, xd to html, ske</a>
+                            </td>
+                            <td>Apr 26, 2020</td>
+                            <td>Apr 26, 2020</td>
+                            <td> $5</td>
+                            <td>
+                              <div class="add-noote text-center">
+                                <i class="far fa-sticky-note" id="note-toggle" onclick="note_toggle()"></i>
+                                <div class="note-area">
+                                  <form action="">
+                                    <textarea name="" id="" cols="40" rows="5"
+                                      placeholder="Type a note to yourself here ..."></textarea>
+                                    <ul class="btn-ul">
+                                      <li class="p-button"><a href="" class="btn btn-save">Save</a></li>
+                                      <li class="p-button"><a class="btn btn-cencel" onclick="note_toggle()">Cancel</a>
+                                      </li>
+                                    </ul>
+                                  </form>
+                                </div>
+                              </div>
+                            </td>
+                            <td><span class="badge badge-success">COMPLETED</span></td>
+                          </tr>
+                        </tbody>
+
+                        <tbody>
+                          <tr>
+                            <td>
+
+                              <ul>
+                                <li><i class="far fa-star"></i>
+                                  <i class="fas fa-star text-warning stared stared-display-none" id="fas-star-w"></i>
+                                </li>
+                                <li class="user-profile-shape"><img src="images/user/client-2.jpg" class="img-fluid"
+                                    alt=""></li>
+                                <li>name</li>
+                              </ul>
+                            </td>
+                            <td>
+                              <span class="badge badge-success" style="background: #78cdd2;">COMPLETED</span>
+                              <a href="" class="order-gig">convert psd to html, xd to html, ske</a>
+                            </td>
+                            <td>Apr 26, 2020</td>
+                            <td>Apr 26, 2020</td>
+                            <td> $5</td>
+                            <td>
+                              <div class="add-noote text-center">
+                                <i class="far fa-sticky-note" id="note-toggle" onclick="note_toggle()"></i>
+                                <div class="note-area">
+                                  <form action="">
+                                    <textarea name="" id="" cols="40" rows="5"
+                                      placeholder="Type a note to yourself here ..."></textarea>
+                                    <ul class="btn-ul">
+                                      <li class="p-button"><a href="" class="btn btn-save">Save</a></li>
+                                      <li class="p-button"><a class="btn btn-cencel" onclick="note_toggle()">Cancel</a>
+                                      </li>
+                                    </ul>
+                                  </form>
+                                </div>
+                              </div>
+                            </td>
+                            <td><span class="badge badge-success">COMPLETED</span></td>
+                          </tr>
+                        </tbody>
+
+                        <tbody>
+                          <tr>
+                            <td>
+
+                              <ul>
+                                <li><i class="far fa-star"></i>
+                                  <i class="fas fa-star text-warning stared stared-display-none" id="fas-star-w"></i>
+                                </li>
+                                <li class="user-profile-shape"><img src="images/user/mine36.jpg" class="img-fluid"
+                                    alt=""></li>
+                                <li>name</li>
+                              </ul>
+                            </td>
+                            <td>
+                              <span class="badge badge-success" style="background: #78cdd2;">COMPLETED</span>
+                              <a href="" class="order-gig">convert psd to html, xd to html, ske</a>
+                            </td>
+                            <td>Apr 26, 2020</td>
+                            <td>Apr 26, 2020</td>
+                            <td> $5</td>
+                            <td>
+                              <div class="add-noote text-center">
+                                <i class="far fa-sticky-note" id="note-toggle" onclick="note_toggle()"></i>
+                                <div class="note-area">
+                                  <form action="">
+                                    <textarea name="" id="" cols="40" rows="5"
+                                      placeholder="Type a note to yourself here ..."></textarea>
+                                    <ul class="btn-ul">
+                                      <li class="p-button"><a href="" class="btn btn-save">Save</a></li>
+                                      <li class="p-button"><a class="btn btn-cencel" onclick="note_toggle()">Cancel</a>
+                                      </li>
+                                    </ul>
+                                  </form>
+                                </div>
+                              </div>
+                            </td>
+                            <td><span class="badge badge-success">COMPLETED</span></td>
+                          </tr>
+                        </tbody>
+
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-ACTIVE" role="tabpanel" aria-labelledby="nav-ACTIVE-tab">
+                    <div class="orders">
+                      <h3>COMPLETED ORDERS</h3>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Buyer</th>
+                            <th scope="col">Gig</th>
+                            <th scope="col">Due On</th>
+                            <th scope="col">Delivered At</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Note</th>
+                            <th scope="col">Status</th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="nav-LATE" role="tabpanel" aria-labelledby="nav-LATE-tab">
+                    <div class="orders">
+                      <h3>COMPLETED ORDERS</h3>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Buyer</th>
+                            <th scope="col">Gig</th>
+                            <th scope="col">Due On</th>
+                            <th scope="col">Delivered At</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Note</th>
+                            <th scope="col">Status</th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="nav-DELIVERED" role="tabpanel" aria-labelledby="nav-DELIVERED-tab">
+                    <div class="orders">
+                      <h3>COMPLETED ORDERS</h3>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Buyer</th>
+                            <th scope="col">Gig</th>
+                            <th scope="col">Due On</th>
+                            <th scope="col">Delivered At</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Note</th>
+                            <th scope="col">Status</th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="nav-COMPLETED" role="tabpanel" aria-labelledby="nav-COMPLETED1-tab">
+                    <div class="orders">
+                      <h3>COMPLETED ORDERS</h3>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Buyer</th>
+                            <th scope="col">Gig</th>
+                            <th scope="col">Due On</th>
+                            <th scope="col">Delivered At</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Note</th>
+                            <th scope="col">Status</th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="nav-CANCELLED" role="tabpanel" aria-labelledby="nav-CANCELLED-tab">
+                    <div class="orders">
+                      <h3>COMPLETED ORDERS</h3>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Buyer</th>
+                            <th scope="col">Gig</th>
+                            <th scope="col">Due On</th>
+                            <th scope="col">Delivered At</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Note</th>
+                            <th scope="col">Status</th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="nav-STARRED" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <div class="orders">
+                      <h3>COMPLETED ORDERS</h3>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Buyer</th>
+                            <th scope="col">Gig</th>
+                            <th scope="col">Due On</th>
+                            <th scope="col">Delivered At</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Note</th>
+                            <th scope="col">Status</th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- order main part end -->
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script src="js/progress.js"></script>
+  <script src="js/noteAddToggle.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

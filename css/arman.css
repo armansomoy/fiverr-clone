@@ -14,11 +14,26 @@
     letter-spacing: 1px;
 }
 
-#profile-navbar .navbar-expand-lg .navbar-nav #message-dropdown {
+/* #profile-navbar .navbar-expand-lg .navbar-nav #message-dropdown {
     width: 400px;
     left: -161px;
+} */
+
+/* mahadi vay code */
+#profile-navbar .navbar-expand-lg .navbar-nav #message-dropdown {
+    width: 400px;
+    left: 185px;
 }
 
+#profile-navbar .navbar-expand-lg .navbar-nav .message-body {
+    height: 520px;
+    /* width: 500px; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+/* mahadi vay code */
 #profile-navbar .navbar-expand-lg .navbar-nav #message-dropdown:after {
     top: -11px;
     left: 190px;
@@ -163,11 +178,17 @@
     color: #1dbf73 !important;
 }
 
+#profile-navbar .user-profile-shape .dropdown-menu a:hover {
+    color: #1dbf73
+}
+
+
+
 #profile-navbar .user-profile-shape img {
     border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    border: 1px solid rgb(255, 187, 187);
+    height: 35px;
+    width: 35px;
+    border: 1px solid rgb(255, 205, 205);
 }
 
 #profile-navbar .user-dollar-shape {
@@ -235,7 +256,7 @@
 
 /* end-footer  start */
 #end-footer {
-    padding: 30px 0px;
+    padding: 20px 0px;
 }
 
 #end-footer .left-side img {
@@ -458,6 +479,7 @@
     border: 1px solid rgba(122, 125, 133, 0.300);
     position: relative;
     margin-bottom: 30px;
+    background-color: #fff;
 }
 
 #profile-main .left-side .user-profile img {
@@ -590,6 +612,7 @@
     padding: 20px 30px 45px;
     border: 1px solid rgba(122, 125, 133, 0.300);
     margin-bottom: 30px;
+    background-color: #fff;
 }
 
 #profile-main .left-side .earn-badge .first-one img {
@@ -625,6 +648,7 @@
 #profile-main .left-side .user-description {
     padding: 20px 30px 45px;
     border: 1px solid rgba(122, 125, 133, 0.300);
+    background-color: #fff;
 }
 
 #profile-main .left-side .user-description .description {
@@ -726,7 +750,7 @@
 }
 
 #profile-main .left-side .user-description .linked-accounts .linked {
-    color: rgb(22, 22, 22) !important;
+    color: rgb(56, 55, 55) !important;
 }
 
 #profile-main .left-side .user-description .skill {
@@ -818,6 +842,7 @@
     border: 1px solid rgba(122, 125, 133, 0.300);
     position: relative;
     margin-bottom: 45px;
+    background-color: #fff;
 }
 
 #profile-main .right-side .gig-header h5 {
@@ -837,6 +862,7 @@
 }
 
 #profile-main .right-side .gig-box .gigs {
+    background-color: #fff;
     border: 1px solid rgba(122, 125, 133, 0.300);
 }
 
@@ -884,6 +910,7 @@
     height: 260px;
     border: 1px solid rgba(122, 125, 133, 0.300);
     padding-top: 80px;
+    background-color: #fff;
 }
 
 #profile-main .right-side .gig-box .new-gigs i {
@@ -1806,6 +1833,21 @@
 
 #dashboard .img-slider {
     padding-bottom: 30px;
+}
+
+#dashboard .img-slider .carousel-indicators {
+    justify-content: flex-start;
+    margin-left: 30px;
+    bottom: 33px;
+    left: 2px;
+}
+
+#dashboard .img-slider .carousel-indicators li {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 6px;
+    margin-left: 6px;
 }
 
 #dashboard .carousel-control-next-icon {

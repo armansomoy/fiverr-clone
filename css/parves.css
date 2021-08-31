@@ -1,0 +1,1304 @@
+#account {
+  background-color: #f7f7f7;
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+#account .custome_container {
+  width: 988px;
+}
+#account ul li a {
+  display: block;
+  color: #999;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all linear 0.3s;
+  line-height: 16px;
+  padding: 4px 0 6px;
+}
+#account ul li .active {
+  color: #000 !important;
+}
+#account ul li a:hover {
+  color: #777;
+  transition: all linear 0.3s;
+}
+#account .account_detail {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+#account .account_detail .label {
+  text-align: right;
+  border-bottom: 1px solid #e5e5e5;
+}
+#account .account_detail .label label {
+  color: #62646a;
+  line-height: 24px;
+  font-size: 17px;
+  font-weight: 400;
+}
+#account .account_detail .label a {
+  color: #1dbf73;
+  font-size: 17px;
+}
+#account .account_detail .label a:hover {
+  text-decoration: underline;
+}
+#account .account_detail form {
+  margin-top: 25px;
+}
+#account .account_detail form input {
+  background-color: #fff;
+  font-family: Helvetica_ligntl;
+  color: #7a7d85;
+  border: 1px #b5b6ba solid;
+  padding: 6px 7px 7px;
+  margin: 0;
+  resize: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  width: 90%;
+  margin-left: 45px;
+  height: 30px;
+  outline: 0;
+}
+#account .account_detail form input:focus-visible {
+  outline: 0;
+  border: 1px solid #1dbf73;
+}
+#account .account_detail form label {
+  color: #777;
+  font-size: 12px;
+  font-weight: 700;
+}
+#account .account_detail form p {
+  font-size: 12px;
+  color: #777;
+}
+
+#account .account_detail form select {
+  color: #777;
+  font-size: 12px;
+  font-weight: 400;
+  height: 30px;
+  width: 150px;
+  margin-left: 46px;
+  border: 1px #b5b6ba solid;
+  border-radius: 3px;
+}
+#account .account_detail form select option {
+  cursor: pointer !important;
+}
+/* #account .account_detail form select:hover {
+  color: #1dbf73;
+}
+#account .account_detail form select option:hover {
+  color: #1dbf73;
+} */
+#account .account_detail form .save_changes {
+  text-align: right;
+}
+#account .account_detail form .save_changes button {
+  background-color: #1dbf73;
+  font-weight: 700;
+  text-transform: none;
+  color: #fff !important;
+  border: 1px solid #1dbf73;
+  font-size: 12px;
+  line-height: 12px;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+#account .account_detail form label .online-status {
+  height: 7px;
+  width: 7px;
+  background-color: #1dbf73;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 2px 4px 0 6px;
+}
+#account .account_detail .account_deactivation {
+  margin-top: 30px;
+}
+#account .account_detail .account_deactivation label {
+  color: #777;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17px;
+}
+#account .account_detail .account_deactivation p {
+  color: #777;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 5px;
+}
+#account .account_detail .account_deactivation ul {
+  margin-top: 10px;
+}
+#account .account_detail .account_deactivation ul li i {
+  color: #777;
+}
+#account .account_detail .account_deactivation .what_text {
+  margin-left: 45px;
+}
+#account .account_detail .account_deactivation ul li {
+  list-style-type: disc;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+#account .account_detail form {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
+}
+#account .account_detail .leaving label {
+  display: block;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 700;
+  color: #777;
+  padding-top: 5px;
+}
+#account .account_detail .leaving {
+  margin-top: 50px;
+}
+#account .account_detail .leaving select {
+  background-color: #fff;
+  font-family: Helvetica_ligntl;
+  color: #7a7d85;
+  border: 1px #b5b6ba solid;
+  padding: 6px 7px 7px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  width: 90%;
+  margin-left: 45px;
+  height: 30px;
+}
+#account .account_detail .leaving select option {
+  font-size: 14px;
+  color: #62646a;
+}
+#account .account_detail .leaving optgroup {
+  color: #000;
+  font-size: 14px;
+}
+
+#account .account_detail .optional input {
+  background-color: #fff;
+  color: #7a7d85;
+  border: 1px #b5b6ba solid;
+  padding: 6px 7px 7px;
+  margin: 0;
+  resize: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  width: 90%;
+  margin-left: 45px;
+  padding-bottom: 70px;
+  outline: 0;
+  margin-top: 35px;
+  font-size: 12px;
+}
+#account .account_detail .optional {
+  display: none;
+}
+#account .account_detail .optional .tellus {
+  margin-top: 30px;
+}
+#account .account_detail .optional input :focus-visible {
+  outline: 0;
+  border: 1px solid #1dbf73;
+}
+
+#account .account_detail .deactivate {
+  text-align: right;
+}
+#account .account_detail .deactivate button {
+  background-color: #d5d4d2;
+  font-weight: 700;
+  text-transform: none;
+  color: #62646a;
+  border: 0;
+  font-size: 12px;
+  line-height: 12px;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 3px;
+  margin-top: 35px;
+}
+/* Account page css Ends */
+/* Security page css start */
+#security {
+  background-color: #f7f7f7;
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+#security .custome_container {
+  width: 988px;
+}
+#security ul li a {
+  display: block;
+  color: #999;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all linear 0.3s;
+  line-height: 16px;
+  padding: 4px 0 6px;
+}
+#security ul li .active {
+  color: #000 !important;
+}
+#security ul li a:hover {
+  color: #777;
+  transition: all linear 0.3s;
+}
+#security .security {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+#security .security form label {
+  color: #777;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 800;
+}
+
+#security .security form p {
+  color: #777;
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  margin-left: 45px;
+}
+#security .security form input {
+  background-color: #fff;
+  font-family: Helvetica_ligntl;
+  color: #7a7d85;
+  border: 1px #b5b6ba solid;
+  padding: 6px 7px 7px;
+  margin: 0;
+  resize: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  width: 90%;
+  margin-left: 45px;
+  height: 30px;
+  outline: 0;
+}
+#security .security form input:focus-visible {
+  outline: 0;
+  border: 1px solid #1dbf73;
+}
+
+#security .security form .save_changes {
+  text-align: right;
+}
+#security .security form .save_changes button {
+  background-color: #1dbf73;
+  font-weight: 700;
+  text-transform: none;
+  color: #fff !important;
+  border: 1px solid #1dbf73;
+  font-size: 12px;
+  line-height: 12px;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+#security .security .change_password {
+  border-bottom: 1px solid #e5e5e5;
+}
+#security .verification {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e5e5e5;
+}
+#security .verification .phone {
+  margin-bottom: 20px;
+}
+#security .verification .phone label {
+  display: block;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 800;
+  color: #777;
+  padding-top: 5px;
+}
+#security .verification .question label {
+  display: block;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 800;
+  color: #777;
+  padding-top: 5px;
+}
+#security .verification .phone p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #777;
+  position: relative;
+  padding: 6px 0 15px;
+}
+#security .verification .question p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #777;
+  position: relative;
+  padding: 6px 0 15px;
+}
+#security .verification .phone a {
+  background-image: none;
+  background-color: #1dbf73;
+  font-weight: 700;
+  text-transform: none;
+  color: #fff !important;
+  border: 1px solid #1dbf73;
+  padding: 9px 12px 8px;
+  border-radius: 3px;
+  margin-left: 55px;
+  text-shadow: 0 -1px 1px rgb(0 0 0 / 20%);
+  box-shadow: none;
+  font-size: 12px;
+  line-height: 12px;
+}
+#security .verification .question a {
+  background-image: none;
+  background-color: #1dbf73;
+  font-weight: 700;
+  text-transform: none;
+  color: #fff !important;
+  border: 1px solid #1dbf73;
+  padding: 9px 12px 8px;
+  border-radius: 3px;
+  margin-left: 55px;
+  text-shadow: 0 -1px 1px rgb(0 0 0 / 20%);
+  box-shadow: none;
+  font-size: 12px;
+  line-height: 12px;
+}
+#security .verification .authentication span {
+  font-size: 9px;
+  color: #1dbf73;
+  font-weight: 700;
+  display: inline-block;
+}
+#security .verification .authentication label {
+  display: block;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 700;
+  color: #777;
+  padding-top: 5px;
+  margin-bottom: 0;
+}
+#security .verification .authentication p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #777;
+  position: relative;
+  padding: 6px 0 15px;
+}
+/* toggle switch css start */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 1px #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 0;
+  bottom: 1px;
+  background-color: white;
+  box-shadow: inset 0 0 0 1px #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #1dbf73;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ccc;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* toggle switch css ends */
+#security .connected_device {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+#security .connected_device .heading {
+  font-size: 12px;
+  font-weight: 700;
+  color: #7a7d85;
+  padding-bottom: 15px;
+}
+#security .connected_device .device_row:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+#security .connected_device .device_row:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-width: 1px;
+}
+#security .connected_device .device_row {
+  padding: 12px;
+  display: flex;
+  border: solid #efeff0;
+  border-width: 1px 1px 0;
+  position: relative;
+}
+
+#security
+  .connected_device
+  .device_row
+  .session-details-box
+  .details-row
+  .is-this-session {
+  color: #1dbf73;
+  padding: 4px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+#security
+  .connected_device
+  .device_row
+  .session-details-box
+  .details-row
+  .device-name {
+  padding: 4px;
+  font-weight: 600;
+  color: #62646a;
+}
+
+#security
+  .connected_device
+  .device_row
+  .session-details-box
+  .details-row
+  .last-activity {
+  font-size: 14px;
+  line-height: 21px;
+  padding: 4px;
+  color: #95979d;
+}
+
+#security
+  .connected_device
+  .device_row
+  .session-details-box
+  .details-row
+  .location {
+  font-size: 14px;
+  line-height: 21px;
+  padding: 4px;
+  color: #95979d;
+}
+
+#security .connected_device .device_row .session-sign-out-wrapper a {
+  padding: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #7a7d85;
+  line-height: 21px;
+  padding-top: 10px;
+}
+#security .connected_device .device_row .session-sign-out-wrapper a:hover {
+  text-decoration: underline;
+}
+#security .connected_device .device_row .session-details-box .details-row span {
+  color: #95979d;
+}
+#security .connected_device .device_row .device-icon {
+  display: inline-block;
+}
+#security .connected_device .device_row .device-icon {
+  height: 48px;
+  width: 48px;
+  padding: 4px;
+}
+#security .connected_device .session-details-box {
+  display: inline-block;
+  margin-left: 10px;
+}
+#security .connected_device .device_row .session-sign-out-wrapper {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+
+#security .connected_device .last-sign_out {
+  text-align: right;
+  margin-top: 20px;
+}
+#security .connected_device .last-sign_out a {
+  padding: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #7a7d85;
+  line-height: 21px;
+  padding-top: 10px;
+  text-align: right;
+}
+#security .connected_device .last-sign_out a:hover {
+  text-decoration: underline;
+}
+/* Security page css ends */
+/* Notification page css start */
+#notification {
+  background-color: #f7f7f7;
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+#notification .custome_container {
+  width: 988px;
+}
+#notification ul li a {
+  display: block;
+  color: #999;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all linear 0.3s;
+  line-height: 16px;
+  padding: 4px 0 6px;
+}
+#notification ul li .active {
+  color: #000 !important;
+}
+#notification ul li a:hover {
+  color: #777;
+  transition: all linear 0.3s;
+}
+#notification .notification {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+#notification .notification .noti-label label {
+  display: block;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 700;
+  color: #777;
+  padding-top: 5px;
+}
+#notification .notification .noti-label p {
+  font-size: 13px;
+  color: #999;
+  width: 180px;
+  padding: 15px 0;
+  line-height: 18px;
+}
+#notification .notification label {
+  font-size: 12px;
+  font-weight: 700;
+  padding-top: 7px;
+  color: #777;
+}
+#notification .notification ul li {
+  padding: 12px 25px 0 0;
+  font-size: 14px;
+  line-height: 17px;
+  color: #777;
+}
+#notification .notification ul li input[type="checkbox"] {
+  font-size: 14px;
+  line-height: 17px;
+  color: #777;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  background: #777;
+}
+#notification .notification .type {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 60px;
+}
+#notification .notification .real_time a {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #4a73e8;
+  font-size: 12px;
+}
+#notification .notification .real_time .switch {
+  padding-top: 0;
+}
+#notification .notification .real_time i {
+  padding-left: 15px;
+  font-size: 12px;
+}
+#notification .notification .real_time .final {
+  padding-bottom: 35px;
+}
+#notification .notification .real_time .final a {
+  background-image: none;
+  background-color: #1dbf73;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: none;
+  color: #fff !important;
+  border: 1px solid #1dbf73;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-shadow: 0 -1px 1px rgb(0 0 0 / 20%);
+  box-shadow: none;
+  padding: 9px 20px 8px;
+  border-radius: 3px;
+}
+/* Notification page css ends */
+/* Billing page css start */
+#billing {
+  background-color: #f7f7f7;
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+#billing .custome_container {
+  width: 988px;
+}
+#billing ul li a {
+  display: block;
+  color: #999;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all linear 0.3s;
+  line-height: 16px;
+  padding: 4px 0 6px;
+}
+#billing ul li .active {
+  color: #000 !important;
+}
+#billing ul li a:hover {
+  color: #777;
+  transition: all linear 0.3s;
+}
+#billing .billing {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+#billing .billing form label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+#billing .billing form input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #c5c6c9;
+  border-radius: 4px;
+  box-shadow: none;
+  font: inherit;
+  color: #404145;
+}
+#billing .billing form select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #c5c6c9;
+  border-radius: 4px;
+  box-shadow: none;
+  font: inherit;
+  color: #404145;
+}
+#billing .billing form .city {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 30px;
+}
+#billing .billing form input:focus {
+  outline: 0;
+  box-shadow: inset 2px 2px 2px #e4e5e7;
+}
+#billing .billing form .bottom {
+  position: relative;
+}
+#billing .billing form .bottom input {
+  box-shadow: none;
+  background-color: #fff;
+  position: absolute;
+  left: 17;
+  top: 4px;
+  height: 18px;
+  width: 18px;
+}
+#billing .billing form .bottom p {
+  padding-left: 25px;
+}
+#billing .billing form a {
+  background: #1dbf73;
+  color: #fff;
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 40px;
+}
+/* Billing page css ends */
+/* Balance page css start */
+
+#balance {
+  background-color: #f7f7f7;
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+#balance .custome_container {
+  width: 988px;
+}
+#balance ul li a {
+  display: block;
+  color: #999;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all linear 0.3s;
+  line-height: 16px;
+  padding: 4px 0 6px;
+}
+#balance ul li .active {
+  color: #000 !important;
+}
+#balance ul li a:hover {
+  color: #777;
+  transition: all linear 0.3s;
+}
+#balance .balance {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 30px;
+  padding-bottom: 60px;
+}
+#balance .balance h4 {
+  line-height: 26px;
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+#balance .balance p {
+  color: #62646a;
+  font-size: 14px;
+  padding-bottom: 40px;
+}
+#balance .balance .table_head {
+  background-color: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-bottom: 0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+#balance .balance .credit_head {
+  background-color: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-bottom: 0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  margin-top: 40px;
+}
+#balance .balance .credit_head .head_total {
+  float: right;
+  border-left: 1px solid #e5e5e5;
+}
+#balance .balance .balance_table span {
+  display: flex;
+  border-radius: 5px 5px 0 0;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 14px;
+  padding: 12px 24px;
+  color: #62646a;
+}
+#balance .balance .credit_table span {
+  display: flex;
+  border-radius: 5px 5px 0 0;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 14px;
+  padding: 12px 24px;
+  color: #62646a;
+}
+#balance .balance .balance_table .table_head .head_total {
+  border-left: 1px solid #e5e5e5;
+  float: right;
+}
+#balance .balance .table_earning {
+  border: 1px solid #e5e5e5;
+}
+#balance .balance .table_earning .earning_amount {
+  float: right;
+}
+#balance .balance .table_reimbursements .reimbursements_amount {
+  float: right;
+}
+#balance .balance .table_reimbursements {
+  border: 1px solid #e5e5e5;
+  border-top: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#balance .balance .table_reimbursements i {
+  padding-top: 7px;
+  padding-left: 5px;
+}
+#balance .balance .table_reimbursements p {
+  color: #888;
+  font-size: 12px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+}
+#balance .balance .credit_table .credit_head i {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+#balance .balance .credit_table .fiverr_credit h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 24px;
+  color: #62646a;
+  padding-bottom: 7px;
+}
+#balance .balance .credit_table .fiverr_credit {
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+#balance .balance .credit_table .fiverr_credit a {
+  width: 168px;
+  padding: 15px;
+  text-transform: none;
+  font-size: 14px;
+  margin-top: 36px;
+  margin-bottom: 24px;
+  background-color: #1dbf73;
+  font-weight: 700;
+  color: #fff !important;
+  border: 1px solid transparent;
+  padding-left: 35px;
+  border-radius: 3px;
+  padding-right: 35px;
+}
+#balance .balance .credit_table .fiverr_credit a:hover {
+  box-shadow: 0 2px 5px 1px rgb(0 0 0 / 30%);
+}
+#balance .balance span {
+  font-size: 12px;
+  color: #888;
+}
+/* Balance page css ends */
+/* Form w-9 css start */
+
+#form_w_9 {
+  background-color: #f7f7f7;
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+#form_w_9 .custome_container {
+  width: 988px;
+}
+#form_w_9 ul li a {
+  display: block;
+  color: #999;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all linear 0.3s;
+  line-height: 16px;
+  padding: 4px 0 6px;
+}
+#form_w_9 ul li .active {
+  color: #000 !important;
+}
+#form_w_9 ul li a:hover {
+  color: #777;
+  transition: all linear 0.3s;
+}
+#form_w_9 .form_w_9 {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 30px;
+  padding-bottom: 60px;
+}
+#form_w_9 .form_w_9 .top_text h5 {
+  color: #404145;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+#form_w_9 .form_w_9 .top_text p {
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#form_w_9 .form_w_9 .top_text span {
+  color: #4a73e8;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#form_w_9 .form_w_9 .top_text {
+  margin-bottom: 42px;
+}
+#form_w_9 .form_w_9 .radio_area h6 {
+  font-weight: 600;
+  line-height: 24px;
+  color: #404145;
+  padding-bottom: 18px;
+  font-size: 16px;
+}
+#form_w_9 .form_w_9 .radio_area ul li {
+  margin-bottom: 16px;
+  border: 1px solid #1dbf73;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 2%), 0 2px 4px rgb(0 0 0 / 4%),
+    0 1px 5px rgb(0 0 0 / 5%);
+  border-radius: 4px;
+}
+#form_w_9 .form_w_9 .radio_area ul li {
+  display: block;
+  padding: 16px 44px 16px 24px;
+}
+/* Radio css start */
+
+.containe {
+  display: block;
+  position: relative;
+  padding-left: 22px;
+  padding-bottom: -10px;
+  margin-bottom: 12px;
+  /* cursor: pointer; */
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.containe input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containe:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.containe input:checked ~ .checkmark {
+  background-color: white;
+  border: 1px solid #1dbf73;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containe input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containe .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #1dbf73;
+}
+/* Radio css ends */
+#form_w_9 .form_w_9 .radio_area ul li label {
+  color: #404145;
+  font-weight: 600;
+  cursor: pointer;
+}
+#form_w_9 .form_w_9 .radio_area ul li p {
+  padding-left: 18px;
+  font-weight: 500;
+  color: #95979d;
+}
+#form_w_9 .form_w_9 .radio_area p {
+  color: #62646a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#form_w_9 .form_w_9 .radio_area p a {
+  color: #4a73e8;
+}
+
+#form_w_9 .form_w_9 .radio_area p a:hover {
+  color: #4a73e8;
+}
+#form_w_9 .form_w_9 .radio_area button {
+  float: right;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 12px 24px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+  background-color: #1dbf73;
+  color: #fff;
+  margin-top: 50px;
+}
+/* Form w-9 css ends */
+
+/* Earning Page css Start */
+#Earning {
+  padding-top: 35px;
+  padding-bottom: 100px;
+  background: #f7f7f7;
+}
+#Earning .main_container {
+  width: 1240px;
+  margin: auto;
+}
+#Earning .main_container .heading h3 {
+  color: #404145;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 120%;
+}
+#Earning .main_container .heading p {
+  float: right;
+  float: right;
+  font-size: 14px;
+  line-height: 14px;
+  color: #555;
+  margin-top: 20px;
+  margin-left: 16px;
+  font-weight: 300;
+}
+#Earning .main_container .heading p span {
+  font-weight: 800;
+}
+#Earning .main_container .earning_chart {
+  height: 115px;
+  background-color: #fff;
+  padding: 25px 10px;
+  margin-bottom: 30px;
+  display: table;
+  width: 100%;
+  border: 1px #e5e5e5 solid;
+  overflow: visible;
+  box-sizing: border-box;
+  margin-top: 35px;
+}
+#Earning .main_container .earning_chart .earning_item {
+  width: 20%;
+  text-align: center;
+  border-right: 1px solid #e5e5e5;
+}
+#Earning .main_container .earning_chart .earning_item:last-child {
+  border: none;
+}
+#Earning .main_container .earning_chart .earning_item h6 {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #999;
+  text-align: center;
+  padding: 0 0 15px;
+  min-width: 125px;
+}
+#Earning .main_container .earning_chart .earning_item span {
+  /* display: table-cell; */
+  font-size: 27px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #303030;
+  text-decoration: none;
+  padding: 0 5px;
+  text-align: center;
+}
+#Earning .main_container .withdraw .method ul {
+  display: inline-block;
+}
+#Earning .main_container .withdraw .method ul li {
+  display: inline-block;
+}
+#Earning .main_container .withdraw .method ul li a {
+  background: #fff;
+  height: 36px;
+  border: 1px solid #b5b6ba;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 500;
+  text-transform: none;
+  color: #62646a;
+  padding: 9px 10px 9px 5px;
+  margin-right: 5px;
+  position: relative;
+}
+#Earning .main_container .withdraw .method ul li a img {
+  width: 21px;
+  height: 21px;
+}
+#Earning .main_container .withdraw .show {
+  margin-top: 20px;
+}
+
+#Earning .main_container .withdraw .show ul {
+  display: inline-block;
+}
+#Earning .main_container .withdraw .show ul li {
+  display: inline-block;
+}
+#Earning .main_container .withdraw .show ul li select {
+  display: inline-block;
+  position: relative;
+  font: 400 12px macan, helvetica neue, Helvetica, Arial, sans-serif;
+  color: #777;
+  text-decoration: none;
+  text-align: left;
+  border: 1px #b2b2b2 solid;
+  padding: 7px 30px 7px 10px;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 3px;
+}
+#Earning .main_container .withdraw .show span {
+  margin-right: 40px;
+}
+#Earning .main_container .withdraw .show a {
+  color: #4a73e8;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 31px;
+  float: right;
+}
+
+#Earning .main_container .withdraw .show a:hover {
+  text-decoration: underline;
+}
+#Earning .main_container .earning_table table {
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  margin-top: 30px;
+}
+#Earning .main_container .earning_table table thead tr th {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #999;
+  line-height: 33px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 20px;
+}
+#Earning .main_container .earning_table table thead tr th:last-child {
+  float: right;
+}
+
+#Earning .main_container .earning_table table tbody tr {
+  border-top: 1px solid #dee2e6;
+}
+#Earning .main_container .earning_table table tbody tr td:last-child {
+  float: right;
+  color: #1dbf73;
+}
+#Earning .main_container .earning_table table tbody tr td {
+  color: #555;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 20px;
+}
+.table thead th {
+  border-bottom: 0;
+}
+/* Earning Page css ends */

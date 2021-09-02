@@ -2705,13 +2705,13 @@
         inbox-page ends
  ********************************/
 #inbox {
-    padding: 0px 70px;
-    
+    padding: 40px 70px;
+
 }
-#inbox .box{
+
+#inbox .box {
     background-color: skyblue;
-    height: 86vh;
-    margin: 7vh 0px;
+    height: 76vh;
 }
 
 /*******************************

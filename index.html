@@ -14,6 +14,8 @@
 
     <!-- arman CSS -->
     <link rel="stylesheet" href="css/arman.css">
+    <link rel="stylesheet" href="css/message.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <title>Sikhbo Ami. CPA Marketing. Fiver </title>
 
@@ -44,12 +46,11 @@
                         <li class="nav-item ">
                             <a class="nav-link" href="dashboard.html">Dashboard </a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item message_toggle">
+                            <a class="nav-link " href="#" onclick="message_toggle()">
                                 Messages
                             </a>
-                            <!-- <div id="message-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div id="message-dropdown" class="dropdown-menu message_area">
 
                                 <ul class="message-header nav nav-tabs" id="myTab" role="tablist">
 
@@ -67,32 +68,301 @@
 
                                 </ul>
 
-                                <div class="tab-content message-body" id="myTabContent">
+                                <div class="tab-content message-body " id="myTabContent">
 
                                     <div class="tab-pane fade show active" id="home" role="tabpanel"
                                         aria-labelledby="home-tab">
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <i><i class="far fa-bell"></i></i>
-                                            </div>
-                                            <div class="col-lg-6">
-
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-                                                    praesentium?</p>
-                                            </div>
+                                        <ul class="item">
+                                            <li>
+                                                <a href="#">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-2 pr-0">
+                                                            <div class="notification_left">
+                                                                <i class="far fa-bell"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8 pr-0">
+                                                            <div class="notification_content">
+                                                                <p>Get 20% off your first order!
+                                                                    Use promo code: FIVERRGROW20.
+                                                                    This offer ends today!</p>
+                                                                <span>2d</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <div class="notification-right">
+                                                                <i class="far fa-envelope"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-2 pr-0">
+                                                            <div class="notification_left">
+                                                                <i class="far fa-bell"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8 pr-0">
+                                                            <div class="notification_content">
+                                                                <p>Get 20% off your first order!
+                                                                    Use promo code: FIVERRGROW20.
+                                                                    This offer ends today!</p>
+                                                                <span>2d</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <div class="notification-right">
+                                                                <i class="far fa-envelope"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-2 pr-0">
+                                                            <div class="notification_left">
+                                                                <i class="far fa-bell"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8 pr-0">
+                                                            <div class="notification_content">
+                                                                <p>Get 20% off your first order!
+                                                                    Use promo code: FIVERRGROW20.
+                                                                    This offer ends today!</p>
+                                                                <span>2d</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <div class="notification-right">
+                                                                <i class="far fa-envelope"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-2 pr-0">
+                                                            <div class="notification_left">
+                                                                <i class="far fa-bell"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8 pr-0">
+                                                            <div class="notification_content">
+                                                                <p>Get 20% off your first order!
+                                                                    Use promo code: FIVERRGROW20.
+                                                                    This offer ends today!</p>
+                                                                <span>2d</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <div class="notification-right">
+                                                                <i class="far fa-envelope"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-2 pr-0">
+                                                            <div class="notification_left">
+                                                                <i class="far fa-bell"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8 pr-0">
+                                                            <div class="notification_content">
+                                                                <p>Get 20% off your first order!
+                                                                    Use promo code: FIVERRGROW20.
+                                                                    This offer ends today!</p>
+                                                                <span>2d</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <div class="notification-right">
+                                                                <i class="far fa-envelope"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-2 pr-0">
+                                                            <div class="notification_left">
+                                                                <i class="far fa-bell"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8 pr-0">
+                                                            <div class="notification_content">
+                                                                <p>Get 20% off your first order!
+                                                                    Use promo code: FIVERRGROW20.
+                                                                    This offer ends today!</p>
+                                                                <span>2d</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <div class="notification-right">
+                                                                <i class="far fa-envelope"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-2 pr-0">
+                                                            <div class="notification_left">
+                                                                <i class="far fa-bell"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8 pr-0">
+                                                            <div class="notification_content">
+                                                                <p>Get 20% off your first order!
+                                                                    Use promo code: FIVERRGROW20.
+                                                                    This offer ends today!</p>
+                                                                <span>2d</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <div class="notification-right">
+                                                                <i class="far fa-envelope"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-2 pr-0">
+                                                            <div class="notification_left">
+                                                                <i class="far fa-bell"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8 pr-0">
+                                                            <div class="notification_content">
+                                                                <p>Get 20% off your first order!
+                                                                    Use promo code: FIVERRGROW20.
+                                                                    This offer ends today!</p>
+                                                                <span>2d</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <div class="notification-right">
+                                                                <i class="far fa-envelope"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-2 pr-0">
+                                                            <div class="notification_left">
+                                                                <i class="far fa-bell"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8 pr-0">
+                                                            <div class="notification_content">
+                                                                <p>Get 20% off your first order!
+                                                                    Use promo code: FIVERRGROW20.
+                                                                    This offer ends today!</p>
+                                                                <span>2d</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <div class="notification-right">
+                                                                <i class="far fa-envelope"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-2 pr-0">
+                                                            <div class="notification_left">
+                                                                <i class="far fa-bell"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8 pr-0">
+                                                            <div class="notification_content">
+                                                                <p>Get 20% off your first order!
+                                                                    Use promo code: FIVERRGROW20.
+                                                                    This offer ends today!</p>
+                                                                <span>2d</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <div class="notification-right">
+                                                                <i class="far fa-envelope"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="noti-footer">
+                                            <ul class="footer-items">
+                                                <li><a href="#"><i class="fas fa-volume-up"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-cog"></i></a></li>
+                                            </ul>
                                         </div>
                                     </div>
 
                                     <div class="tab-pane fade" id="profile" role="tabpanel"
-                                        aria-labelledby="profile-tab"> temporibus a, voluptate et repudiandae in
-                                        illo rerum. Quia accusantium maiores dicta fugiat dol.</div>
+                                        aria-labelledby="profile-tab">
+                                        <ul class="item">
+                                            <li>
+                                                <a href="#">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-2 pr-0">
+                                                            <div class="notification_left">
+                                                                <img src="images/lavel-one.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8 pr-0">
+                                                            <div class="notification_content">
+                                                                <p>Get 20% off your first order!
+                                                                    Use promo code: FIVERRGROW20.
+                                                                    This offer ends today!</p>
+                                                                <span>2d</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <div class="notification-right">
+                                                                <i class="far fa-envelope"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="noti-footer">
+                                            <ul class="footer-items">
+                                                <li><a href="#"><i class="fas fa-volume-up"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-cog"></i></a></li>
+                                            </ul>
+                                            <a class="see-all-inbox" href="#">See All in Inbox</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <a class="dropdown-item" href="#">Action</a>
+                                <!-- <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div> -->
+                                <a class="dropdown-item" href="#">Something else here</a> -->
+                            </div>
                         </li>
 
                         <li class="nav-item">
@@ -795,6 +1065,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+
+    <script src="js/noteAddToggle.js"></script>
 </body>
 
 </html>

@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="css/progress.css">
   <link rel="stylesheet" href="css/arman.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/message.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
   <title>Your Order Page</title>
 
@@ -25,27 +27,26 @@
   <!-- profile-navbar start -->
   <section id="profile-navbar">
     <nav class="navbar navbar-expand-lg navbar-light ">
-      <div class="container">
-        <a class="navbar-brand" href="dashboard.html"><img src="images/fiver_logo.png" alt="" srcset=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container">
+            <a class="navbar-brand" href="dashboard.html"><img src="images/fiver_logo.png" alt="" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
-              <a class="nav-link" href="dashboard.html">Dashboard </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Messages
-              </a>
-              <!-- <div id="message-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="dashboard.html">Dashboard </a>
+                    </li>
+                    <li class="nav-item message_toggle">
+                        <a class="nav-link " href="#" onclick="message_toggle()">
+                            Messages
+                        </a>
+                        <div id="message-dropdown" class="dropdown-menu message_area">
 
                             <ul class="message-header nav nav-tabs" id="myTab" role="tablist">
-
                                 <li class="nav-item">
                                     <a class="nav-link active nav-tab-notification" id="home-tab" data-toggle="tab"
                                         href="#home" role="tab" aria-controls="home" aria-selected="true"><i
@@ -57,117 +58,262 @@
                                         role="tab" aria-controls="profile" aria-selected="false"><i
                                             class="fas fa-comment"></i> Inbox (0)</a>
                                 </li>
-
                             </ul>
 
-                            <div class="tab-content message-body" id="myTabContent">
-
+                            <div class="tab-content message-body " id="myTabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel"
                                     aria-labelledby="home-tab">
-                                    <div class="row">
-                                        <div class="col-lg-3">
-                                            <i><i class="far fa-bell"></i></i>
-                                        </div>
-                                        <div class="col-lg-6">
-
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-                                                praesentium?</p>
-                                        </div>
+                                    <ul class="item">
+                                        <li>
+                                            <a href="#">
+                                                <div class="row m-0">
+                                                    <div class="col-lg-2 pr-0">
+                                                        <div class="notification_left">
+                                                            <i class="far fa-bell"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8 pr-0">
+                                                        <div class="notification_content">
+                                                            <p>Get 20% off your first order!
+                                                                Use promo code: FIVERRGROW20.
+                                                                This offer ends today!</p>
+                                                            <span>2d</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <div class="notification-right">
+                                                            <i class="far fa-envelope"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="noti-footer">
+                                        <ul class="footer-items">
+                                            <li><a href="#"><i class="fas fa-volume-up"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-cog"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
 
-                                <div class="tab-pane fade" id="profile" role="tabpanel"
-                                    aria-labelledby="profile-tab"> temporibus a, voluptate et repudiandae in
-                                    illo rerum. Quia accusantium maiores dicta fugiat dol.</div>
+                                <div class="tab-pane fade inbox-zero" id="profile" role="tabpanel"
+                                    aria-labelledby="profile-tab">
+
+                                    <a href="inbox.html">
+                                        <div class="client ">
+                                            <div class="img">
+                                                <img src="images/user/client-2.jpg" alt="">
+                                            </div>
+                                            <div class="mid">
+                                                <h6> <strong>mahadimolla</strong> </h6>
+                                                <p>Me: Are their Bro..</p>
+                                                <p class="date">2 Months</p>
+                                            </div>
+                                            <div class="last">
+                                                <i class="far fa-envelope-open"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="inbox.html">
+                                        <div class="client ">
+                                            <div class="img">
+                                                <img src="images/user/client-136.jpg" alt="">
+                                            </div>
+                                            <div class="mid">
+                                                <h6> <strong>mahadimolla</strong> </h6>
+                                                <p>Me: Are their Bro..</p>
+                                                <p class="date">2 Months</p>
+                                            </div>
+                                            <div class="last">
+                                                <i class="far fa-envelope-open"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="inbox.html">
+                                        <div class="client ">
+                                            <div class="img">
+                                                <img src="images/user/client-2.jpg" alt="">
+                                            </div>
+                                            <div class="mid">
+                                                <h6> <strong>mahadimolla</strong> </h6>
+                                                <p>Me: Are their Bro..</p>
+                                                <p class="date">2 Months</p>
+                                            </div>
+                                            <div class="last">
+                                                <i class="far fa-envelope-open"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="inbox.html">
+                                        <div class="client ">
+                                            <div class="img">
+                                                <img src="images/user/client-136.jpg" alt="">
+                                            </div>
+                                            <div class="mid">
+                                                <h6> <strong>mahadimolla</strong> </h6>
+                                                <p>Me: Are their Bro..</p>
+                                                <p class="date">2 Months</p>
+                                            </div>
+                                            <div class="last">
+                                                <i class="far fa-envelope-open"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="inbox.html">
+                                        <div class="client ">
+                                            <div class="img">
+                                                <img src="images/user/client-2.jpg" alt="">
+                                            </div>
+                                            <div class="mid">
+                                                <h6> <strong>mahadimolla</strong> </h6>
+                                                <p>Me: Are their Bro..</p>
+                                                <p class="date">2 Months</p>
+                                            </div>
+                                            <div class="last">
+                                                <i class="far fa-envelope-open"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="inbox.html">
+                                        <div class="client ">
+                                            <div class="img">
+                                                <img src="images/user/client-136.jpg" alt="">
+                                            </div>
+                                            <div class="mid">
+                                                <h6> <strong>mahadimolla</strong> </h6>
+                                                <p>Me: Are their Bro..</p>
+                                                <p class="date">2 Months</p>
+                                            </div>
+                                            <div class="last">
+                                                <i class="far fa-envelope-open"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="inbox.html">
+                                        <div class="client ">
+                                            <div class="img">
+                                                <img src="images/user/client-2.jpg" alt="">
+                                            </div>
+                                            <div class="mid">
+                                                <h6> <strong>mahadimolla</strong> </h6>
+                                                <p>Me: Are their Bro..</p>
+                                                <p class="date">2 Months</p>
+                                            </div>
+                                            <div class="last">
+                                                <i class="far fa-envelope-open"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="inbox.html">
+                                        <div class="client ">
+                                            <div class="img">
+                                                <img src="images/user/client-136.jpg" alt="">
+                                            </div>
+                                            <div class="mid">
+                                                <h6> <strong>mahadimolla</strong> </h6>
+                                                <p>Me: Are their Bro..</p>
+                                                <p class="date">2 Months</p>
+                                            </div>
+                                            <div class="last">
+                                                <i class="far fa-envelope-open"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <div class="noti-footer">
+                                        <ul class="footer-items">
+                                            <li><a href="#"><i class="fas fa-volume-up"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-cog"></i></a></li>
+                                        </ul>
+                                        <a class="see-all-inbox" href="inbox.html">See All in Inbox</a>
+                                    </div>
+                                </div>
                             </div>
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div> -->
-            </li>
+                        </div>
+                    </li>
 
-            <li class="nav-item">
-              <a class="nav-link disabled" href="order.html">Orders</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="gig.html">Gigs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Analytics</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="Earning.html">Earnings</a>
-            </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="order.html">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="gig.html">Gigs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="analytics-page/analytices.html">Analytics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="Earning.html">Earnings</a>
+                    </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Community
-              </a>
-              <div class="dropdown-menu community-dropdown" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Events</a>
-                <a class="dropdown-item" href="#">Blogs</a>
-                <a class="dropdown-item" href="#">Forum</a>
-                <a class="dropdown-item" href="#">Community Standards</a>
-                <a class="dropdown-item" href="#">Podcast</a>
-              </div>
-            </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Community
+                        </a>
+                        <div class="dropdown-menu community-dropdown" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Events</a>
+                            <a class="dropdown-item" href="#">Blogs</a>
+                            <a class="dropdown-item" href="#">Forum</a>
+                            <a class="dropdown-item" href="#">Community Standards</a>
+                            <a class="dropdown-item" href="#">Podcast</a>
+                        </div>
+                    </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                More
-              </a>
-              <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="requests.html">Buyer Requests</a>
-                <a class="dropdown-item" href="scaleBusiness.html">Scale Your Business</a>
-                <a class="dropdown-item" href="#">Learn - Online Courses</a>
-                <a class="dropdown-item" href="contacts.html">Contacts</a>
-              </div>
-            </li>
-          </ul>
-          <ul class="navbar-nav  ml-auto">
-            <li class="nav-item">
-              <a class="nav-link disabled green-font switch-btn" href="#">Switch to Buying</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            More
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="requests.html">Buyer Requests</a>
+                            <a class="dropdown-item" href="scaleBusiness.html">Scale Your Business</a>
+                            <a class="dropdown-item" href="#">Learn - Online Courses</a>
+                            <a class="dropdown-item" href="contacts.html">Contacts</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav  ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link disabled green-font switch-btn" href="#">Switch to Buying</a>
 
-              <div class="switch-dropdown">
-                <p>Find professional services and connect with freelancers. We'll set this as your
-                  default mode.</p>
-              </div>
-            </li>
-            <li class="nav-item dropdown user-profile-shape">
-              <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <img src="images/user/mine36.jpg" alt="">
-              </a>
-              <div class="dropdown-menu user-dropdown" aria-labelledby="navbarDropdown">
-                <div class="part-one">
-                  <a class="dropdown-item" href="index.html">Profile</a>
-                  <a class="dropdown-item green-font" href="#">Refer & Get up to $100</a>
-                </div>
-                <div class="part-one">
-                  <a class="dropdown-item" href="account.html">Setting</a>
-                  <a class="dropdown-item" href="#">English<i class="fas fa-globe" style="margin-left: 10px;"></i></a>
-                  <a class="dropdown-item" href="#"> $ USD</a>
-                  <a class="dropdown-item" href="#">Help & Support</a>
-                </div>
-                <a class="dropdown-item" href="#">Logout</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <div class="user-dollar-shape">
-                <p>$25.33</p>
-                <a class="nav-link disabled " href="#"></a>
-              </div>
-            </li>
-          </ul>
+                        <div class="switch-dropdown">
+                            <p>Find professional services and connect with freelancers. We'll set this as your
+                                default mode.</p>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown user-profile-shape">
+                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img src="images/user/mine36.jpg" alt="">
+                        </a>
+                        <div class="dropdown-menu user-dropdown" aria-labelledby="navbarDropdown">
+                            <div class="part-one">
+                                <a class="dropdown-item" href="index.html">Profile</a>
+                                <a class="dropdown-item green-font" href="#">Refer & Get up to $100</a>
+                            </div>
+                            <div class="part-one">
+                                <a class="dropdown-item" href="account.html">Setting</a>
+                                <a class="dropdown-item" href="#">English<i class="fas fa-globe"
+                                        style="margin-left: 10px;"></i></a>
+                                <a class="dropdown-item" href="#"> $ USD</a>
+                                <a class="dropdown-item" href="#">Help & Support</a>
+                            </div>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="user-dollar-shape">
+                            <p>$25.33</p>
+                            <a class="nav-link disabled " href="#"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-  </section>
-  <!-- profile-navbar ends -->
+</section>
+<!-- profile-navbar ends -->
 
 
 

@@ -1,0 +1,42 @@
+#analytics_cart{
+    padding:25px
+}
+#analytics_cart h3{
+    font-size: 18px;
+    line-height: 26px;
+    color: #404145;
+    font-weight: 600;
+}
+#analytics_cart ul{
+    float: left;
+}
+#analytics_cart ul li{
+    display: inline-block;
+    float: left;
+    color: #62646a;
+    font-size: 14px;
+    margin-right: 45px;
+    line-height: 25px;
+    text-transform: capitalize;
+}
+#analytics_cart ul .earned{
+    height: 15px;
+    width: 15px;
+    background-color: rgb(117, 223, 238);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 7px;
+}
+#analytics_cart ul .over_count{
+    padding-left: 7px;
+    display: inline-block;
+}
+#analytics_cart ul .Cancelled{
+    background-color: rgb(181, 182, 186);
+}
+#analytics_cart ul .Complete{
+    background-color: rgb(40, 67, 137);
+}
+#analytics_cart ul .new_order{
+    background-color: rgb(29, 191, 115);
+}

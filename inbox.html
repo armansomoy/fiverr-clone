@@ -15,6 +15,7 @@
     <!-- arman CSS -->
     <link rel="stylesheet" href="css/arman.css">
     <link rel="stylesheet" href="css/message.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <title>My Contacts</title>
 
@@ -29,12 +30,11 @@
 
 <body>
 
-    <!-- profile-navbar start -->
-    <section id="profile-navbar">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <!-- profile-navbar start -->
+     <section id="profile-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container">
-
-                <a class="navbar-brand" href="#"><img src="images/fiver_logo.png" alt="" srcset=""></a>
+                <a class="navbar-brand" href="dashboard.html"><img src="images/fiver_logo.png" alt="" srcset=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -44,17 +44,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Dashboard </a>
+                            <a class="nav-link" href="dashboard.html">Dashboard </a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item message_toggle">
+                            <a class="nav-link " href="#" onclick="message_toggle()">
                                 Messages
                             </a>
-                            <div id="message-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div id="message-dropdown" class="dropdown-menu message_area">
 
                                 <ul class="message-header nav nav-tabs" id="myTab" role="tablist">
-
                                     <li class="nav-item">
                                         <a class="nav-link active nav-tab-notification" id="home-tab" data-toggle="tab"
                                             href="#home" role="tab" aria-controls="home" aria-selected="true"><i
@@ -66,48 +64,192 @@
                                             role="tab" aria-controls="profile" aria-selected="false"><i
                                                 class="fas fa-comment"></i> Inbox (0)</a>
                                     </li>
-
                                 </ul>
 
-                                <div class="tab-content message-body" id="myTabContent">
-
+                                <div class="tab-content message-body " id="myTabContent">
                                     <div class="tab-pane fade show active" id="home" role="tabpanel"
                                         aria-labelledby="home-tab">
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <i><i class="far fa-bell"></i></i>
-                                            </div>
-                                            <div class="col-lg-6">
-
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-                                                    praesentium?</p>
-                                            </div>
+                                        <ul class="item">
+                                            <li>
+                                                <a href="#">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-2 pr-0">
+                                                            <div class="notification_left">
+                                                                <i class="far fa-bell"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8 pr-0">
+                                                            <div class="notification_content">
+                                                                <p>Get 20% off your first order!
+                                                                    Use promo code: FIVERRGROW20.
+                                                                    This offer ends today!</p>
+                                                                <span>2d</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <div class="notification-right">
+                                                                <i class="far fa-envelope"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="noti-footer">
+                                            <ul class="footer-items">
+                                                <li><a href="#"><i class="fas fa-volume-up"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-cog"></i></a></li>
+                                            </ul>
                                         </div>
                                     </div>
 
-                                    <div class="tab-pane fade" id="profile" role="tabpanel"
-                                        aria-labelledby="profile-tab"> temporibus a, voluptate et repudiandae in
-                                        illo rerum. Quia accusantium maiores dicta fugiat dol.</div>
+                                    <div class="tab-pane fade inbox-zero" id="profile" role="tabpanel"
+                                        aria-labelledby="profile-tab">
+
+                                        <a href="inbox.html">
+                                            <div class="client ">
+                                                <div class="img">
+                                                    <img src="images/user/client-2.jpg" alt="">
+                                                </div>
+                                                <div class="mid">
+                                                    <h6> <strong>mahadimolla</strong> </h6>
+                                                    <p>Me: Are their Bro..</p>
+                                                    <p class="date">2 Months</p>
+                                                </div>
+                                                <div class="last">
+                                                    <i class="far fa-envelope-open"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="inbox.html">
+                                            <div class="client ">
+                                                <div class="img">
+                                                    <img src="images/user/client-136.jpg" alt="">
+                                                </div>
+                                                <div class="mid">
+                                                    <h6> <strong>mahadimolla</strong> </h6>
+                                                    <p>Me: Are their Bro..</p>
+                                                    <p class="date">2 Months</p>
+                                                </div>
+                                                <div class="last">
+                                                    <i class="far fa-envelope-open"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="inbox.html">
+                                            <div class="client ">
+                                                <div class="img">
+                                                    <img src="images/user/client-2.jpg" alt="">
+                                                </div>
+                                                <div class="mid">
+                                                    <h6> <strong>mahadimolla</strong> </h6>
+                                                    <p>Me: Are their Bro..</p>
+                                                    <p class="date">2 Months</p>
+                                                </div>
+                                                <div class="last">
+                                                    <i class="far fa-envelope-open"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="inbox.html">
+                                            <div class="client ">
+                                                <div class="img">
+                                                    <img src="images/user/client-136.jpg" alt="">
+                                                </div>
+                                                <div class="mid">
+                                                    <h6> <strong>mahadimolla</strong> </h6>
+                                                    <p>Me: Are their Bro..</p>
+                                                    <p class="date">2 Months</p>
+                                                </div>
+                                                <div class="last">
+                                                    <i class="far fa-envelope-open"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="inbox.html">
+                                            <div class="client ">
+                                                <div class="img">
+                                                    <img src="images/user/client-2.jpg" alt="">
+                                                </div>
+                                                <div class="mid">
+                                                    <h6> <strong>mahadimolla</strong> </h6>
+                                                    <p>Me: Are their Bro..</p>
+                                                    <p class="date">2 Months</p>
+                                                </div>
+                                                <div class="last">
+                                                    <i class="far fa-envelope-open"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="inbox.html">
+                                            <div class="client ">
+                                                <div class="img">
+                                                    <img src="images/user/client-136.jpg" alt="">
+                                                </div>
+                                                <div class="mid">
+                                                    <h6> <strong>mahadimolla</strong> </h6>
+                                                    <p>Me: Are their Bro..</p>
+                                                    <p class="date">2 Months</p>
+                                                </div>
+                                                <div class="last">
+                                                    <i class="far fa-envelope-open"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="inbox.html">
+                                            <div class="client ">
+                                                <div class="img">
+                                                    <img src="images/user/client-2.jpg" alt="">
+                                                </div>
+                                                <div class="mid">
+                                                    <h6> <strong>mahadimolla</strong> </h6>
+                                                    <p>Me: Are their Bro..</p>
+                                                    <p class="date">2 Months</p>
+                                                </div>
+                                                <div class="last">
+                                                    <i class="far fa-envelope-open"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="inbox.html">
+                                            <div class="client ">
+                                                <div class="img">
+                                                    <img src="images/user/client-136.jpg" alt="">
+                                                </div>
+                                                <div class="mid">
+                                                    <h6> <strong>mahadimolla</strong> </h6>
+                                                    <p>Me: Are their Bro..</p>
+                                                    <p class="date">2 Months</p>
+                                                </div>
+                                                <div class="last">
+                                                    <i class="far fa-envelope-open"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <div class="noti-footer">
+                                            <ul class="footer-items">
+                                                <li><a href="#"><i class="fas fa-volume-up"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-cog"></i></a></li>
+                                            </ul>
+                                            <a class="see-all-inbox" href="inbox.html">See All in Inbox</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Orders</a>
+                            <a class="nav-link disabled" href="order.html">Orders</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Gigs</a>
+                            <a class="nav-link disabled" href="gig.html">Gigs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Analytics</a>
+                            <a class="nav-link disabled" href="analytics-page/analytices.html">Analytics</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Earnings</a>
+                            <a class="nav-link disabled" href="Earning.html">Earnings</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -130,10 +272,10 @@
                                 More
                             </a>
                             <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Buyer Requests</a>
-                                <a class="dropdown-item" href="#">Scale Your Business</a>
+                                <a class="dropdown-item" href="requests.html">Buyer Requests</a>
+                                <a class="dropdown-item" href="scaleBusiness.html">Scale Your Business</a>
                                 <a class="dropdown-item" href="#">Learn - Online Courses</a>
-                                <a class="dropdown-item" href="#">Contacts</a>
+                                <a class="dropdown-item" href="contacts.html">Contacts</a>
                             </div>
                         </li>
                     </ul>
@@ -153,11 +295,11 @@
                             </a>
                             <div class="dropdown-menu user-dropdown" aria-labelledby="navbarDropdown">
                                 <div class="part-one">
-                                    <a class="dropdown-item" href="#">Buyer Requests</a>
-                                    <a class="dropdown-item green-font" href="#">Scale Your Business</a>
+                                    <a class="dropdown-item" href="index.html">Profile</a>
+                                    <a class="dropdown-item green-font" href="#">Refer & Get up to $100</a>
                                 </div>
                                 <div class="part-one">
-                                    <a class="dropdown-item" href="#">Setting</a>
+                                    <a class="dropdown-item" href="account.html">Setting</a>
                                     <a class="dropdown-item" href="#">English<i class="fas fa-globe"
                                             style="margin-left: 10px;"></i></a>
                                     <a class="dropdown-item" href="#"> $ USD</a>
@@ -186,9 +328,337 @@
 
     <section id="inbox">
         <div class="container">
-            <div class="row">
-                <div class="box">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium esse facilis nisi saepe aliquid eos omnis. Hic, doloremque. Quibusdam porro facilis nisi recusandae harum cum alias repellendus, rerum consequatur quos qui a pariatur voluptas in eligendi tempore aliquid reiciendis deleniti inventore consequuntur nobis voluptatum neque. Dolore inventore facilis impedit esse commodi quisquam, a autem, sapiente debitis beatae amet aliquid! Consectetur blanditiis unde, at necessitatibus accusamus dolores modi quibusdam impedit qui libero suscipit iusto quia. Provident quis, facere repellendus eos exercitationem cumque tempora rem tenetur. Maiores tenetur fugit quos ullam quod doloremque vitae, inventore eum minus libero aliquam quaerat nostrum. Magnam sit mollitia, enim laboriosam impedit aperiam atque porro molestias sequi voluptas nesciunt reprehenderit obcaecati soluta ducimus doloremque corrupti maxime debitis quam. Esse possimus debitis neque itaque labore eos error! Quia, tempora a omnis maiores nulla numquam ullam quis possimus eligendi repellendus culpa esse vitae sequi laboriosam optio. Repudiandae velit placeat doloremque fugit libero nesciunt accusantium aliquid dolores sequi, veniam suscipit blanditiis enim error, id optio animi laudantium possimus a. Adipisci in id vero consectetur eligendi ex eius dolores accusantium voluptatibus excepturi, accusamus maiores veritatis provident nihil exercitationem, quasi, beatae assumenda. Hic, asperiores quae. Ipsum eius culpa atque maiores tenetur? Recusandae corporis inventore nam harum sunt delectus pariatur. Explicabo repudiandae soluta consectetur, provident nihil quibusdam earum vero cum quo esse dolor, aliquam corporis necessitatibus sapiente ea facere sed impedit reiciendis officia, nisi ex nostrum non. Ipsam fuga, maxime ipsum, molestiae quidem doloribus molestias deserunt exercitationem alias et ipsa numquam consequatur repellat adipisci quae. Culpa eius magnam autem hic cupiditate voluptatibus impedit, quos mollitia illum magni voluptas molestias quisquam, unde aspernatur at libero corporis quod quas. Debitis quos, accusantium tempore quisquam ipsam ullam inventore, repudiandae veniam hic natus, voluptate aliquam error mollitia. Perspiciatis eos saepe cupiditate, tenetur cum eaque provident sint mollitia cumque! Ea incidunt illum excepturi nesciunt veritatis. Quis, unde iusto quo soluta inventore earum ducimus ullam excepturi id totam. Qui delectus dignissimos rerum laboriosam soluta suscipit eius cumque, rem aspernatur corrupti hic fuga architecto modi obcaecati, ipsam totam consequuntur ad sequi earum! Dignissimos similique accusantium quae, corporis magnam optio, nulla omnis, quo eligendi aut doloremque eos sequi tempore aliquam amet! Libero reprehenderit officiis consequatur non enim delectus possimus nobis aspernatur placeat tempore et laborum nisi fugit, tempora exercitationem eum ipsa aperiam adipisci iste a. Atque corporis vero possimus quam velit quisquam repellendus culpa necessitatibus! Placeat ex impedit, soluta ratione rerum fugiat perspiciatis voluptas inventore nesciunt esse recusandae reiciendis in veniam blanditiis odio quos alias dolorem commodi ullam iure a, ipsam nihil repudiandae vitae? Eum amet doloribus nemo aspernatur quidem deserunt delectus corrupti magni quo debitis. 
+            <div class="inbox-div">
+                <div class="row">
+                    <div class="first-sight">
+                        <div class="header">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    All Conversation
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <div class="part-one">
+                                        <a class="dropdown-item" href="#">All Conversation</a>
+                                        <a class="dropdown-item" href="#">Unread</a>
+                                        <a class="dropdown-item" href="#">Starred</a>
+                                    </div>
+                                    <div class="part-one">
+                                        <a class="dropdown-item" href="#">Archived</a>
+                                        <a class="dropdown-item" href="#">Spam</a>
+                                    </div>
+                                    <div class="part-one">
+                                        <a class="dropdown-item" href="#">Custom Offer</a>
+                                    </div>
+                                    <div class="part-one">
+                                        <a class="dropdown-item" href="#">Follow Up</a>
+                                        <a class="dropdown-item" href="#">Nudge</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href=""><i class="header-btn fa fa-search" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="client-body">
+                            <div class="client active">
+                                <div class="img">
+                                    <img src="images/user/client-136.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <strong>mahadimolla</strong> </h6>
+                                    <p>Me: Are their Bro..</p>
+                                </div>
+                                <div class="last">
+                                    <p>2 Months</p> <i class="far fa-star"></i>
+                                    <i class="far fa-envelope-open"></i>
+                                </div>
+                            </div>
+                            <div class="client ">
+                                <div class="img">
+                                    <img src="images/user/client-2.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <strong>mahadimolla</strong> </h6>
+                                    <p>Me: Are their Bro..</p>
+                                </div>
+                                <div class="last">
+                                    <p>2 Months</p> <i class="far fa-star"></i>
+                                    <i class="far fa-envelope-open"></i>
+                                </div>
+                            </div>
+                            <div class="client ">
+                                <div class="img">
+                                    <img src="images/user/client-136.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <strong>mahadimolla</strong> </h6>
+                                    <p>Me: Are their Bro..</p>
+                                </div>
+                                <div class="last">
+                                    <p>2 Months</p> <i class="far fa-star"></i>
+                                    <i class="far fa-envelope-open"></i>
+                                </div>
+                            </div>
+                            <div class="client ">
+                                <div class="img">
+                                    <img src="images/user/client-2.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <strong>mahadimolla</strong> </h6>
+                                    <p>Me: Are their Bro..</p>
+                                </div>
+                                <div class="last">
+                                    <p>2 Months</p> <i class="far fa-star"></i>
+                                    <i class="far fa-envelope-open"></i>
+                                </div>
+                            </div>
+                            <div class="client ">
+                                <div class="img">
+                                    <img src="images/user/client-136.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <strong>mahadimolla</strong> </h6>
+                                    <p>Me: Are their Bro..</p>
+                                </div>
+                                <div class="last">
+                                    <p>2 Months</p> <i class="far fa-star"></i>
+                                    <i class="far fa-envelope-open"></i>
+                                </div>
+                            </div>
+                            <div class="client ">
+                                <div class="img">
+                                    <img src="images/user/client-2.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <strong>mahadimolla</strong> </h6>
+                                    <p>Me: Are their Bro..</p>
+                                </div>
+                                <div class="last">
+                                    <p>2 Months</p> <i class="far fa-star"></i>
+                                    <i class="far fa-envelope-open"></i>
+                                </div>
+                            </div>
+                            <div class="client ">
+                                <div class="img">
+                                    <img src="images/user/client-136.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <strong>mahadimolla</strong> </h6>
+                                    <p>Me: Are their Bro..</p>
+                                </div>
+                                <div class="last">
+                                    <p>2 Months</p> <i class="far fa-star"></i>
+                                    <i class="far fa-envelope-open"></i>
+                                </div>
+                            </div>
+                            <div class="client ">
+                                <div class="img">
+                                    <img src="images/user/client-2.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <strong>mahadimolla</strong> </h6>
+                                    <p>Me: Are their Bro..</p>
+                                </div>
+                                <div class="last">
+                                    <p>2 Months</p> <i class="far fa-star"></i>
+                                    <i class="far fa-envelope-open"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-sight">
+                        <div class="header">
+                            <h4>
+                                marcel709</h4>
+                            <p>Last seen 6d ago <span>|</span> Local time Sep 2, 4:52 PM</p>
+                        </div>
+                        <div class="client-text-body">
+                            <p class="head-p"><i class="fas fa-check-circle"></i> We have Your Back</p>
+                            <p class="description-p">For added safety and your protection, keep payments and
+                                communications within Fiverr. <a href="#">Learn more</a></p>
+                            <div class="my-text">
+                                <div class="img">
+                                    <img src="images/user/mine36.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <a href="#">Me</a><span>
+                                            May 8, 7:57 PM</span> </h6>
+                                    <p>Oops, I'm really sorry for that. If you had told me this,</p>
+                                </div>
+                            </div>
+                            <div class="my-text client-text">
+                                <div class="img">
+                                    <img src="images/user/client-2.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <a href="#">Jhonwick</a><span>
+                                            May 8, 7:57 PM</span> </h6>
+                                    <a href="#" class="report"><i class="fas fa-flag"></i> Report</a>
+                                    <a href="#" class="spam"><i class="far fa-times-circle"></i> Spam</a>
+                                    <p>Oops, I'm really sorry for that. </p>
+                                </div>
+                            </div>
+                            <div class="my-text">
+                                <div class="img">
+                                    <img src="images/user/mine36.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <a href="#">Me</a><span>
+                                            May 8, 7:57 PM</span> </h6>
+                                    <p>Oops, I'm really sorry for that. If you had told me this, </p>
+                                </div>
+                            </div>
+                            <div class="my-text client-text">
+                                <div class="img">
+                                    <img src="images/user/client-2.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <a href="#">Jhonwick</a><span>
+                                            May 8, 7:57 PM</span> </h6>
+                                    <a href="#" class="report"><i class="fas fa-flag"></i> Report</a>
+                                    <a href="#" class="spam"><i class="far fa-times-circle"></i> Spam</a>
+                                    <p>Oops, I'm really sorry for that. </p>
+                                </div>
+                            </div>
+                            <div class="my-text">
+                                <div class="img">
+                                    <img src="images/user/mine36.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <a href="#">Me</a><span>
+                                            May 8, 7:57 PM</span> </h6>
+                                    <p>Oops, I'm really sorry for that. If you had told me this, I could have changed
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="my-text client-text">
+                                <div class="img">
+                                    <img src="images/user/client-2.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <a href="#">Jhonwick</a><span>
+                                            May 8, 7:57 PM</span> </h6>
+                                    <a href="#" class="report"><i class="fas fa-flag"></i> Report</a>
+                                    <a href="#" class="spam"><i class="far fa-times-circle"></i> Spam</a>
+                                    <p>Oops, I'm really sorry for that. </p>
+                                </div>
+                            </div>
+                            <div class="my-text">
+                                <div class="img">
+                                    <img src="images/user/mine36.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <a href="#">Me</a><span>
+                                            May 8, 7:57 PM</span> </h6>
+                                    <p>Oops, I'm really sorry for that. If you had told me this, </p>
+                                </div>
+                            </div>
+                            <div class="my-text client-text">
+                                <div class="img">
+                                    <img src="images/user/client-2.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <a href="#">Jhonwick</a><span>
+                                            May 8, 7:57 PM</span> </h6>
+                                    <a href="#" class="report"><i class="fas fa-flag"></i> Report</a>
+                                    <a href="#" class="spam"><i class="far fa-times-circle"></i> Spam</a>
+                                    <p>Oops, I'm really sorry for that. </p>
+                                </div>
+                            </div>
+                            <div class="my-text">
+                                <div class="img">
+                                    <img src="images/user/mine36.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <a href="#">Me</a><span>
+                                            May 8, 7:57 PM</span> </h6>
+                                    <p>Should I send you custom offer? .</p>
+                                </div>
+                            </div>
+                            <div class="my-text">
+                                <div class="img">
+                                    <img src="images/user/mine36.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <a href="#">Me</a><span>
+                                            May 8, 7:57 PM</span> </h6>
+                                    <p style="font-size: 15px;"><i>Here is your Custom Offer</i></p>
+                                </div>
+                            </div>
+                            <div class="order-box">
+                                <div class="first">
+                                    <a href="">I will convert pixel perfect PSD, xd, figma to HTML</a>
+                                    <h5>$50</h5>
+                                </div>
+                                <div class="second">
+                                    <p>1 section, responsive website</p>
+                                </div>
+                                <div class="third">
+                                    <h6>Your offer includes</h6>
+                                    <i class="far fa-clock"></i>
+                                    <p>1 Day Delivery</p>
+                                </div>
+                                <div class="fourth">
+                                    <a href="#">View Order</a>
+                                    <button>Offer Accepted</button>
+                                </div>
+                            </div>
+                            <div class="my-text client-text">
+                                <div class="img">
+                                    <img src="images/user/client-2.jpg" alt="">
+                                </div>
+                                <div class="mid">
+                                    <h6> <a href="#">Jhonwick</a><span>
+                                            May 8, 7:57 PM</span> </h6>
+                                    <a href="#" class="report"><i class="fas fa-flag"></i> Report</a>
+                                    <a href="#" class="spam"><i class="far fa-times-circle"></i> Spam</a>
+                                    <p>Accept Bro. Best Wishes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <form action="">
+                                <input type="text" id="fname" name="firstname">
+                            </form>
+                            <div class="left-bar">
+                                <i class="far fa-smile"></i>
+                                <i class="fas fa-bolt"></i>
+                                <i class="fas fa-paperclip"></i>
+
+                                <a href="#">Create an Offer</a>
+                            </div>
+                            <div>
+                                <p> <i class="fas fa-angle-down"></i> Send</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third-sight">
+                        <div class="header">
+                            <i class="fas fa-ellipsis-h"></i>
+                            <div class="icon-div">
+                                <i class="far fa-star"></i> |
+                                <i class="far fa-envelope-open"></i>
+                                <i class="fas fa-inbox"></i>
+                                <i class="far fa-trash-alt"></i> |
+                                <i class="fas fa-tag"></i>
+                            </div>
+                        </div>
+                        <div class="about-client">
+                            <h4>About</h4>
+                            <div class="text-center">
+                                <img src="images/user/client-136.jpg" alt="">
+                                <h5>Jhonwick</h5>
+
+                            </div>
+                            <div class="text-left">
+                                <p>Form</p>
+                                <p>English</p>
+                            </div>
+                            <div class="text-right">
+                                <p>USA</p>
+                                <p>Basic</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
